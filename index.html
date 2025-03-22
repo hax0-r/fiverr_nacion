@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACION</title>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./Docs/Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <div id="bottomToTopScroll"></div>
+    <div id="navbar"></div>
+
+    <div class="bg-[#f2f6f9] p-3">
+        <div class="flex items-center justify-between gap-5 flex-wrap max-w-7xl w-full mx-auto">
+            <a href="tel:+50677778888" class="flex font-medium tracking-wide text-sm items-center gap-1">
+                <i class="fa-brands fa-whatsapp"></i>
+                +506-7777-8888
+            </a>
+            <a href="mailto:info@naciontravel.com" class="flex font-medium tracking-wide text-sm items-center gap-1">
+                <i class="fa-solid fa-envelope"></i>
+                info@naciontravel.com
+            </a>
+            <a href="" class="flex font-medium tracking-wide text-sm items-center gap-1">
+                Facebook
+            </a>
+            <a href="" class="flex font-medium tracking-wide text-sm items-center gap-1">
+                Instagram
+            </a>
+            <a href="" class="flex font-medium tracking-wide text-sm items-center gap-1">
+                TikTok
+            </a>
+            <button class="border rounded-lg px-3 cursor-pointer">en</button>
+        </div>
+    </div>
+
+    <div style="width: 0;" id="resNav"
+        class="fixed transition-all duration-500 overflow-hidden h-screen top-0 left-0 bg-white z-50">
+        <div class="">
+            <div class="flex p-5 items-center justify-between">
+                <a href="./index.html">
+                    <img src="" alt="logo">
+                </a>
+                <i id="closeNav" class="fa-solid fa-x text-xl"></i>
+            </div>
+
+            <div class="mt-8 text-nowrap px-5 w-full flex flex-col gap-10 justify-between h-[80vh] overflow-auto">
+                <ul class="  flex-col gap-8 flex ">
+                    <li> <a href="./excursions.html"
+                            class=" text-nowrap capitalize cursor-pointer transition-all duration-500">
+                            excursions</a>
+                    </li>
+                    <li> <a href="./about.html"
+                            class=" text-nowrap capitalize cursor-pointer transition-all duration-500">
+                            about us</a></li>
+                    <li> <a href="./Contact.html"
+                            class=" text-nowrap capitalize cursor-pointer transition-all duration-500">
+                            contact us</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w-full">
+        <div class="bg-white w-full h-20 flex items-center justify-center">
+            <div class="flex items-center justify-between max-w-7xl w-full mx-auto p-5">
+                <a href="./index.html">
+                    <img src="" alt="logo">
+                </a>
+                <div class="flex items-center gap-3">
+                    <ul class="hidden items-center justify-center gap-8 lg:flex ">
+                        <li> <a href="./excursions.html"
+                                class=" capitalize magra cursor-pointer transition-all duration-500">
+                                excursions</a>
+                        </li>
+                        <li> <a href="./about.html"
+                                class=" capitalize magra cursor-pointer transition-all duration-500">
+                                about us</a></li>
+                        <li> <a href="./Contact.html"
+                                class=" capitalize magra cursor-pointer transition-all duration-500">
+                                contact us</a></li>
+                    </ul>
+                    <div class="lg:hidden">
+                        <i class="fa-solid fa-bars text-2xl cursor-pointer" id="openNav"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="homeBg">
+        <div class="max-w-7xl relative min-h-[calc(100vh-8rem)] flex md:items-end items-center justify-center w-full mx-auto p-5">
+            <div class="md:absolute left-5 bottom-0">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/350x250" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/350x250" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/350x250" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/350x250" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/350x250" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/350x250" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/350x250" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/350x250" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://placehold.co/350x250" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div id="footer" class="md:mt-20 mt-10"></div> -->
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./Docs/javascript/global.js"></script>
+<script src="./Docs/javascript/Navbar.js"></script>
+<script src="./Docs/javascript/Footer.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        grabCursor: true,
+        effect: "creative",
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        creativeEffect: {
+            prev: {
+                shadow: true,
+                translate: [0, 0, -400],
+            },
+            next: {
+                translate: ["100%", 0, 0],
+            },
+        },
+    });
+</script>
+
+</html>
