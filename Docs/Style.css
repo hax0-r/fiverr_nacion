@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Magra:wght@400;700&display=swap');
 
-@font-face {
-    font-family: font;
-    src: url(./Fonts/big_noodle_titling_oblique.woff);
-}
-
-.noodle {
-    font-family: font;
-}
-
 * {
     box-sizing: border-box;
     outline: none;
