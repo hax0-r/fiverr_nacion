@@ -1,12 +1,3 @@
-// smooth scsrolling
-
-const lenis = new Lenis();
-function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-}
-requestAnimationFrame(raf);
-
 // scroll to the top
 
 // const bottomToTopScroll = document.getElementById("bottomToTopScroll");

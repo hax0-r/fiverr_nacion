@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <div style="width: 100%;" id="resNav"
+        <div style="width: 0%;" id="resNav"
             class="fixed transition-all duration-500 overflow-hidden h-screen top-0 left-0 bg-white z-50">
             <div class="flex items-center justify-center flex-col">
                 <div class="flex p-5 mt-10 items-center justify-between">
@@ -82,13 +82,16 @@
                                 <i class="fa-solid fa-envelope"></i>
                                 info@naciontravel.com
                             </a></li>
-                        <li> <a href="" class="flex justify-center font-medium tracking-wide text-sm items-center gap-1">
+                        <li> <a href=""
+                                class="flex justify-center font-medium tracking-wide text-sm items-center gap-1">
                                 Facebook
                             </a></li>
-                        <li> <a href="" class="flex justify-center font-medium tracking-wide text-sm items-center gap-1">
+                        <li> <a href=""
+                                class="flex justify-center font-medium tracking-wide text-sm items-center gap-1">
                                 Instagram
                             </a></li>
-                        <li> <a href="" class="flex justify-center font-medium tracking-wide text-sm items-center gap-1">
+                        <li> <a href=""
+                                class="flex justify-center font-medium tracking-wide text-sm items-center gap-1">
                                 TikTok
                             </a></li>
                         <li>
@@ -1186,16 +1189,197 @@
         </footer>
     </div>
 
+    <!-- contact pop-up -->
 
-    <!-- <div id="footer" class="md:mt-20 mt-10"></div> -->
+    <div class="w-full h-screen bg-[#000000cc] fixed top-0 left-0 overlay hidden fadeIn"></div>
+    <div class="hidden contactUs fadeIn">
+        <div class="flex p-4 items-center h-screen w-full justify-center fixed top-0 left-0">
+            <div class="bg-white max-h-[85vh] overflow-auto p-5 rounded-sm border max-w-4xl w-full">
 
+                <img src="" alt="logo">
 
+                <h3 class="text-center mt-7 text-2xl">Get in Touch With Us</h3>
+                <form class="mt-10 max-w-3xl mx-auto">
 
+                    <div class="flex items-center justify-between gap-3">
+                        <label for="name" class=" tracking-wide md:text-xl">Full Name</label>
+                        <input type="text" class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500"
+                            name="name" id="name">
+                    </div>
+                    <div class="flex mt-6 items-center justify-between gap-3">
+                        <label for="PhoneNumber" class=" tracking-wide md:text-xl">Phone Number</label>
+                        <input type="text" class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500"
+                            name="PhoneNumber" id="PhoneNumber">
+                    </div>
+                    <div class="flex mt-6 items-center justify-between gap-3">
+                        <label for="Email" class=" tracking-wide md:text-xl">Email</label>
+                        <input type="email" class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500"
+                            name="Email" id="Email">
+                    </div>
+                    <div class="flex mt-6 md:items-center justify-between gap-3">
+                        <label for="TravelDates" class=" tracking-wide md:text-xl">Travel Dates</label>
+                        <div class="w-full md:flex-row flex-col flex md:items-center sm:max-w-xl max-w-[12rem] gap-3">
+                            <label for="startDates" class=" tracking-wide md:text-xl">Start Dates</label>
+                            <input type="date" class="w-full max-w-[10rem] p-3 border border-zinc-500"
+                                name="start Dates" id="startDates">
+                            <label for="Finish" class="ml-2 tracking-wide md:text-xl">Finish</label>
+                            <input type="date" class="w-full max-w-[10rem] p-3 border border-zinc-500" name="Finish"
+                                id="Finish">
+                        </div>
+                    </div>
+                    <div class="flex mt-6 items-start justify-between gap-3">
+                        <label for="Message" class=" tracking-wide md:text-xl">Message</label>
+                        <textarea class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500 resize-none"
+                            rows="6" name="Message" id="Message"></textarea>
+                    </div>
+                    <div class="flex mt-3 items-end justify-end ">
+                        <button
+                            class="border cursor-pointer transition-all duration-500 hover:opacity-80 rounded-full px-8 py-2">Send</button>
+                    </div>
+
+                </form>
+
+                <div class="flex mt-6 items-center justify-center">
+                    <button
+                        class="border cursor-pointer transition-all duration-500 hover:opacity-80 rounded-full px-8 py-2">Chat
+                        With Us on WhatsApp </button>
+                </div>
+
+                <div class="flex mt-6 items-center justify-center">
+                    <div class="flex items-center gap-10">
+                        <div class="w-10 h-10 border rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="w-10 h-10 border rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="w-10 h-10 border rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-center mt-10">Terms & Conditions</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- privacy Policy -->
+    <div class="hidden privacyPolicy fadeIn">
+        <div class="flex p-4 items-center h-screen w-full justify-center fixed top-0 left-0">
+            <div class="bg-white max-h-[85vh] overflow-auto p-5 md:px-10 rounded-sm border max-w-4xl w-full">
+                <h3 class="text-center mt-7 text-2xl">Terms and Conditions for Nacion Travel</h3>
+                <p class="mt-5">Welcome to Nacion Travel! These Terms and Conditions outline the rules and regulations
+                    for using our services, including our website, booking platform, and tours. By accessing or using
+                    our services, you agree to comply with these terms. Please read them carefully.
+                </p>
+                <h2 class="mt-5 font-semibold">1. Privacy and Data Collection</h2>
+                <p class="mt-2">At Nacion Travel, we value your privacy and are committed to protecting any personal
+                    information we collect. Our Privacy Policy explains how we handle your data, and by using our
+                    services, you consent to the collection and use of your information as described below.</p>
+                <h2 class="mt-5 font-semibold">1.1 Personal Information We Collect</h2>
+                <p class="mt-2">We collect personal information necessary to provide our services, including:</p>
+                <ul class="pl-5 list-disc space-y-2 mt-2">
+                    <li> Booking Information: When you book a tour, we collect details such as your name, contact
+                        information, payment details, and travel preferences. This information is used solely to
+                        complete
+                        your booking and is not stored unnecessarily.</li>
+                    <li> Communication Information: If you contact us via email, phone, or our website, we collect your
+                        contact details and the content of your messages to assist you effectively.</li>
+                    <li> Social Media Information: If you interact with us on platforms like Facebook, Instagram, or
+                        Twitter,
+                        we may collect information you share publicly or through direct messages.</li>
+
+                </ul>
+                <h2 class="mt-5 font-semibold">1.2 How We Use Personal Information</h2>
+                <p class="mt-2">We use your personal information for the following purposes:</p>
+                <ul class="pl-5 list-disc space-y-2 mt-2">
+                    <li> To provide, administer, and improve our tours and services.</li>
+                    <li> To communicate with you about your bookings, inquiries, or feedback.</li>
+                    <li> To prevent fraud, misuse of our services, and ensure the security of our systems.</li>
+                    <li> To comply with legal obligations and protect the rights and safety of our customers and staff.
+                    </li>
+                    <li> To conduct research and improve our services for a better customer experience.</li>
+                </ul>
+                <h2 class="mt-5 font-semibold">1.3 Disclosure of Personal Information</h2>
+                <p class="mt-2">We may share your personal information in the following circumstances:</p>
+                <ul class="pl-5 list-disc space-y-2 mt-2">
+                    <li> Service Providers: We work with trusted third-party providers (e.g., transportation,
+                        accommodations) who assist in delivering our services. They only access your information as
+                        necessary to perform their tasks.</li>
+                    <li> Legal Requirements: We may disclose your information to comply with legal obligations, protect
+                        our rights, prevent illegal activity, or ensure public safety.</li>
+                </ul>
+                <h2 class="mt-5 font-semibold">1.4 Your Rights</h2>
+                <p class="mt-2"> Under applicable privacy laws, you have the following rights:</p>
+                <ul class="pl-5 list-disc space-y-2 mt-2">
+                    <li> The right to know what personal information we collect and how it is used.</li>
+                    <li> The right to request the correction or deletion of your personal information.</li>
+                    <li> The right to be free from discrimination when exercising your privacy rights.</li>
+                    <li> We do not sell or share your personal information for advertising purposes.</li>
+                </ul>
+                <p class="mt-2">To exercise your rights, please contact us using the same method you initially used to
+                    communicate with us.</p>
+                <h2 class="mt-5 font-semibold">2. Booking and Payment</h2>
+                <h2 class="mt-2 font-semibold">2.1 Booking Confirmation</h2>
+                <p class="mt-2">All bookings are subject to availability. A booking is confirmed only after you receive
+                    a confirmation email from Nacion Travel.</p>
+                <h2 class="mt-5 font-semibold"> 2.2 Payment Terms</h2>
+                <ul class="pl-5 list-disc space-y-2 mt-2">
+                    <li> Full payment is required at the time of booking unless otherwise specified.</li>
+                    <li> We accept major credit cards, bank transfers, and other payment methods as indicated on our
+                        website.</li>
+                    <li> Prices are listed in USD and are subject to change without notice.</li>
+                </ul>
+                <h2 class="mt-5 font-semibold"> 2.3 Cancellations and Refunds</h2>
+                <ul class="pl-5 list-disc space-y-2 mt-2">
+                    <li> Cancellations made 30 days or more before the tour date will receive a full refund.</li>
+                    <li> Cancellations made 15-29 days before the tour date will receive a 50% refund.</li>
+                    <li> Cancellations made less than 15 days before the tour date are non-refundable.</li>
+                    <li> No-shows or early departures from tours are non-refundable.</li>
+                </ul>
+                <h2 class="mt-5 font-semibold"> 3. Tour Participation</h2>
+                <h2 class="mt-2 font-semibold"> 3.1 Health and Safety</h2>
+                <ul class="pl-5 list-disc space-y-2 mt-2">
+                    <li> Participants must inform Nacion Travel of any medical conditions, allergies, or special
+                        requirements at the time of booking.</li>
+                    <li> Some tours involve physical activity (e.g., hiking, zip-lining). Participants should ensure
+                        they are physically fit for the chosen tour.</li>
+                    <li> Nacion Travel reserves the right to refuse participation to anyone deemed unfit for a tour.
+                    </li>
+                </ul>
+                <h2 class="mt-5 font-semibold"> 3.2 Liability</h2>
+                <ul class="pl-5 list-disc space-y-2 mt-2">
+                    <li> Nacion Travel is not liable for any injuries, illnesses, or damages incurred during the tour.
+                    </li>
+                    <li> Participants are responsible for their personal belongings and travel insurance.</li>
+                </ul>
+                <h2 class="mt-5 font-semibold"> 3.3 Changes to Itineraries</h2>
+                <ul class="pl-5 list-disc space-y-2 mt-2">
+                    <li> Nacion Travel reserves the right to modify itineraries due to weather, safety concerns, or
+                        other unforeseen circumstances.</li>
+                    <li> If a tour is canceled by Nacion Travel, customers will receive a full refund or the option to
+                        reschedule.</li>
+                </ul>
+                <h2 class="mt-5 font-semibold"> 4. Intellectual Property</h2>
+                <p class="mt-2">All content on the Nacion Travel website, including text, images, logos, and videos, is
+                    the property of Nacion Travel and is protected by copyright laws. Unauthorized use of this content
+                    is strictly prohibited.</p>
+                <h2 class="mt-5 font-semibold"> 5. Governing Law</h2>
+                <p class="mt-2">These Terms and Conditions are governed by the laws of Costa Rica. Any disputes arising
+                    from the use of our services will be resolved in the courts of Costa Rica.</p>
+                <h2 class="mt-5 font-semibold"> 6. Contact Us</h2>
+                <p class="mt-2">If you have any questions about these Terms and Conditions, please contact us at:</p>
+                <a href="mailto:info@naciontravel.com" class="mt-2 block"><b>Email</b>: info@naciontravel.com</a>
+                <a href="tel:+50677778888" class="mt-2 block"><b>Phone</b>: +506 7777 8888</a>
+            </div>
+        </div>
+    </div>
 
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
 <script src="./Docs/javascript/global.js"></script>
 <script src="./Docs/javascript/Navbar.js"></script>
 <script src="./Docs/javascript/Footer.js"></script>
