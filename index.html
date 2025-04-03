@@ -20,27 +20,153 @@
     <div id="bottomToTopScroll"></div>
 
     <div class="bg-[#f2f6f9]">
-        <div id="navbar"></div>
 
         <div class="homeBg h-full">
+            <!-- navbar -->
+
+
+
+            <div class="bg-[#f2f6f9] p-3 lg:block hidden">
+                <div class="flex items-center justify-between gap-5 flex-wrap max-w-7xl w-full mx-auto">
+                    <a href="tel:+50688326969" class="flex font-medium tracking-wide text-sm items-center gap-1">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        +506-8832-6969
+                    </a>
+                    <a href="mailto:info@naciontravel.com"
+                        class="flex font-medium tracking-wide text-sm items-center gap-1">
+                        <i class="fa-solid fa-envelope"></i>
+                        info@naciontravel.com
+                    </a>
+                    <a href="https://www.facebook.com/share/1C5GCk14c2/?mibextid=wwXIfr" class="flex font-medium tracking-wide text-sm items-center gap-1">
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/naciontravel?igsh=MTlxYWRhcjF6cDYwdw==" class="flex font-medium tracking-wide text-sm items-center gap-1">
+                        Instagram
+                    </a>
+                    <a href=" https://www.tiktok.com/@nacion_travel?_t=ZS-8vBsGtnANS3&_r=1" class="flex font-medium tracking-wide text-sm items-center gap-1">
+                        TikTok
+                    </a>
+                    <select name="" class="border rounded-lg py-1  cursor-pointer" id="">
+                        <option value="">es</option>
+                        <option value="">fr</option>
+                    </select>
+                </div>
+            </div>
+
+            <div style="width: 0%;" id="resNav"
+                class="fixed transition-all duration-500 overflow-hidden h-screen top-0 left-0 bg-white z-50">
+                <div class="flex items-center justify-center flex-col">
+                    <div class="flex p-5 mt-10 items-center justify-between">
+                        <a href="./index.html">
+                            <img src="./Docs/Assets/images/logo.png" class="h-20" alt="logo">
+                        </a>
+                        <i class="fa-solid cursor-pointer closeNav fa-x text-xl absolute top-8 right-8"></i>
+                    </div>
+
+                    <div
+                        class="mt-8 text-nowrap px-5 w-full flex flex-col gap-10 items-center text-center justify-between h-[80vh] overflow-auto">
+                        <ul class="  flex-col gap-8 flex ">
+                            <li> <a href="./excursions.html"
+                                    class=" text-nowrap capitalize cursor-pointer transition-all duration-500">
+                                    excursions</a>
+                            </li>
+                            <li> <a href="./about.html"
+                                    class=" text-nowrap capitalize cursor-pointer transition-all duration-500">
+                                    about us</a></li>
+                            <li> <a
+                                    class=" closeNav openContactFormBtn text-nowrap capitalize cursor-pointer transition-all duration-500">
+                                    contact us</a></li>
+                            <li> <a href="tel:+50688326969"
+                                    class="flex text-center justify-center font-medium tracking-wide text-sm items-center gap-1">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    +506-8832-6969
+                                </a></li>
+                            <li> <a href="mailto:info@naciontravel.com"
+                                    class="flex text-center justify-center font-medium tracking-wide text-sm items-center gap-1">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    info@naciontravel.com
+                                </a></li>
+                            <li> <a href="https://www.facebook.com/share/1C5GCk14c2/?mibextid=wwXIfr"
+                                    class="flex justify-center font-medium tracking-wide text-sm items-center gap-1">
+                                    Facebook
+                                </a></li>
+                            <li> <a href="https://www.instagram.com/naciontravel?igsh=MTlxYWRhcjF6cDYwdw=="
+                                    class="flex justify-center font-medium tracking-wide text-sm items-center gap-1">
+                                    Instagram
+                                </a></li>
+                            <li> <a href=" https://www.tiktok.com/@nacion_travel?_t=ZS-8vBsGtnANS3&_r=1"
+                                    class="flex justify-center font-medium tracking-wide text-sm items-center gap-1">
+                                    TikTok
+                                </a></li>
+                            <li>
+                                <select name="" class="border rounded-lg py-1  cursor-pointer" id="">
+                                    <option value="">en</option>
+                                    <option value="">es</option>
+                                    <option value="">fr</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="w-full">
+                <div class=" w-full h-28 flex items-center justify-center">
+                    <div class="flex items-center justify-between max-w-7xl w-full mx-auto p-5">
+                        <a href="./index.html">
+                            <img src="./Docs/Assets/images/logo.png" class="h-20" alt="logo">
+                        </a>
+                        <div class="flex items-center gap-3">
+                            <ul class="hidden items-center justify-center gap-8 lg:flex ">
+                                <li> <a href="./excursions.html"
+                                        class=" capitalize magra cursor-pointer transition-all duration-500">
+                                        excursions</a>
+                                </li>
+                                <li> <a href="./about.html"
+                                        class=" capitalize magra cursor-pointer transition-all duration-500">
+                                        about us</a></li>
+                                <li> <a
+                                        class="openContactFormBtn capitalize magra cursor-pointer transition-all duration-500">
+                                        contact us</a></li>
+                            </ul>
+                            <div class="lg:hidden">
+                                <i class="fa-solid fa-bars text-2xl cursor-pointer" id="openNav"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- navbar -->
             <div
                 class="max-w-7xl relative min-h-[calc(100vh-8rem)] flex md:items-end items-center justify-center w-full mx-auto p-5">
                 <div class="slider3 absolute md:left-0 md:bottom-10">
                     <input type="radio" name="slider" id="item-1" checked>
                     <input type="radio" name="slider" id="item-2">
                     <input type="radio" name="slider" id="item-3">
+                    <input type="radio" name="slider" id="item-4">
+                    <input type="radio" name="slider" id="item-5">
+                    <input type="radio" name="slider" id="item-6">
                     <div class="cards">
                         <label class="card" for="item-1" id="song-1">
-                            <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                                alt="song">
+                            <img src="./Docs/Assets/images/header (1).jpeg" alt="song">
                         </label>
                         <label class="card" for="item-2" id="song-2">
-                            <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                                alt="song">
+                            <img src="./Docs/Assets/images/header (1).jpg" alt="song">
                         </label>
                         <label class="card" for="item-3" id="song-3">
-                            <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                                alt="song">
+                            <img src="./Docs/Assets/images/header (1).png" alt="song">
+                        </label>
+                        <label class="card" for="item-4" id="song-4">
+                            <img src="./Docs/Assets/images/header (2).jpg" alt="song">
+                        </label>
+                        <label class="card" for="item-5" id="song-5">
+                            <img src="./Docs/Assets/images/header (2).png" alt="song">
+                        </label>
+                        <label class="card" for="item-6" id="song-6">
+                            <img src="./Docs/Assets/images/header (3).png" alt="song">
                         </label>
                     </div>
                 </div>
@@ -53,11 +179,10 @@
                 Rainforests to Pristine Beaches
                 Discover the Best of Costa Rica with Our Expertly Curated Tours</h1>
 
-            <div class="grid md:gap-5 gap-8 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:mt-16 mt-8">
+            <div class="grid md:gap-5 w-full gap-8 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:mt-16 mt-8">
                 <div class="w-full">
-                    <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                        class="md:h-64 h-60 object-cover w-full" alt="img">
-                    <div class="border p-5 border-zinc-300 mt-3 text-center">
+                    <img src="./Docs/Assets/images/Volcanoes.png" class="md:h-64 h-60 object-cover w-full" alt="img">
+                    <div class="border p-5 border-zinc-300 mt-3 text-center ">
                         <h2 class="text-lg font-semibold">Costa Rica Volcanoes</h2>
                         <p class="pt-2 text-sm">Costa Rica is home to over 200 volcanic formations, with 7 currently
                             active
@@ -74,40 +199,28 @@
 
                 </div>
                 <div class="w-full">
-                    <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                        class="md:h-64 h-60 object-cover w-full" alt="img">
+                    <img src="./Docs/Assets/images/Rainforest.png" class="md:h-64 h-60 object-cover w-full" alt="img">
                     <div class="border p-5 border-zinc-300 mt-3 text-center">
-                        <h2 class="text-lg font-semibold">Costa Rica Volcanoes</h2>
-                        <p class="pt-2 text-sm">Costa Rica is home to over 200 volcanic formations, with 7 currently
-                            active
-                            volcanoes. Of these, 5 are accessible to tourists, offering incredible opportunities to
-                            explore
-                            dramatic landscapes, hike to volcanic craters, and relax in natural hot springs.
-                            Discover
-                            the
-                            power and beauty of Costa Rica’s volcanoes, from the iconic Arenal to the breathtaking
-                            Poás,
-                            and
-                            experience one of the most unique natural wonders in the world.</p>
+                        <h2 class="text-lg font-semibold">Rainforest Landscapes</h2>
+                        <p class="pt-2 text-sm">Costa Rica is renowned for its lush rainforests, which cover over 50% of
+                            the country and are among the most biodiverse places on Earth. Home to 5% of the world’s
+                            species, these rainforests offer unforgettable experiences like spotting monkeys, sloths,
+                            and exotic birds, hiking through dense jungle trails, and exploring cascading waterfalls.
+                            With protected areas like Corcovado National Park and Manuel Antonio, Costa Rica’s
+                            rainforests are a paradise for nature lovers and eco-tourists alike.</p>
                     </div>
 
                 </div>
                 <div class="w-full">
-                    <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                        class="md:h-64 h-60 object-cover w-full" alt="img">
+                    <img src="./Docs/Assets/images/Beaches.png" class="md:h-64 h-60 object-cover w-full" alt="img">
                     <div class="border p-5 border-zinc-300 mt-3 text-center">
-                        <h2 class="text-lg font-semibold">Costa Rica Volcanoes</h2>
-                        <p class="pt-2 text-sm">Costa Rica is home to over 200 volcanic formations, with 7 currently
-                            active
-                            volcanoes. Of these, 5 are accessible to tourists, offering incredible opportunities to
-                            explore
-                            dramatic landscapes, hike to volcanic craters, and relax in natural hot springs.
-                            Discover
-                            the
-                            power and beauty of Costa Rica’s volcanoes, from the iconic Arenal to the breathtaking
-                            Poás,
-                            and
-                            experience one of the most unique natural wonders in the world.</p>
+                        <h2 class="text-lg font-semibold">Amazing Beaches</h2>
+                        <p class="pt-2 text-sm">Costa Rica boasts over 800 miles of stunning coastline, with beaches
+                            that range from pristine white sands to dramatic black volcanic shores. Whether you’re
+                            looking to surf world-class waves in Tamarindo, relax on the palm-fringed beaches of Manuel
+                            Antonio, or explore the secluded shores of the Osa Peninsula, Costa Rica’s beaches offer
+                            something for everyone. With warm turquoise waters, abundant wildlife, and breathtaking
+                            sunsets, these coastal gems are a must-visit for any traveler.</p>
                     </div>
                 </div>
             </div>
@@ -130,8 +243,7 @@
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Explore & Empower</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img1.jpeg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Immerse yourself in Costa Rica’s vibrant culture and breathtaking
                                 landscapes on this volunteer-focused journey. Spend four days in the charming town of
@@ -148,17 +260,17 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/urhqfm
+                        " target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Pura Vida Impact</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img2.jpeg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Make a difference in the rural community of Santos through hands-on
                                 volunteer work like painting schools or creating community gardens. Then, dive into
@@ -174,17 +286,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/urhqfm" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Costa Rica Unlocked</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img3.jpeg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Witness the awe-inspiring Arenal Volcano, kayak across the
                                 crystal-clear
@@ -200,17 +311,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/ywgiqw" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Costa Rica Coast to Coast</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img4.jpeg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Experience the best of Costa Rica’s Pacific and Caribbean coasts on
                                 this
@@ -226,17 +336,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/x7wqg5" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Costa Rica Highlights</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img5.jpeg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Discover the perfect blend of nature and culture on this
                                 action-packed
@@ -256,17 +365,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/ykko7s" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Costa Rica In-Depth</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img6.jpg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Embark on a transformative two-week journey through Costa Rica’s
                                 breathtaking countryside. Spend meaningful time volunteering in local communities, where
@@ -282,17 +390,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/1dlyno" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Costa Rica Volunteer Adventure</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img7.jpg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Join this 8-day adventure to explore Costa Rica’s stunning volcanoes,
                                 serene lakes, and vibrant communities. Volunteer in meaningful projects and leave a
@@ -303,17 +410,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/vsda2h" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">San José & Puntarenas Coastal</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img8.jpg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Say “Pura Vida” to Costa Rica’s incredible wildlife and culture on
                                 this
@@ -329,17 +435,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/25z7g7" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Costa Rica Wildlife & Adventure</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img9.jpeg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Explore Costa Rica’s most iconic destinations, from the turtle
                                 nesting
@@ -354,17 +459,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/z89yw3" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Girl Scouts Adventure</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img10.jpg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Designed for Girl Scouts, this educational adventure takes you
                                 through
@@ -381,17 +485,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/xd7d5w" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Rainforests, Rivers & Culture</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img11.jpg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Experience Costa Rica like a local on this immersive tour. Soak in
                                 Arenal’s hot springs, taste organic pineapples, kayak down scenic rivers, and dive into
@@ -405,17 +508,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/gydzmx" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Language Immersion & Adventure</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img12.jpeg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Learn Spanish while exploring Costa Rica’s natural wonders! Each
                                 morning,
@@ -429,17 +531,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/j4gus0" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Northern Costa Rica</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img13.jpg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Discover the beauty of northern Costa Rica, from the bubbling Rincón
                                 de
@@ -453,17 +554,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/a949sg" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Costa Rica Eco-Warrior</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img14.jpg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Dive into Costa Rica’s biodiversity with hands-on conservation
                                 projects
@@ -479,17 +579,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/iasew3" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
                 <div class="w-full border flex flex-col justify-between">
                     <div class="">
                         <p class="text-center text-xl p-2">Panama & Costa Rica</p>
-                        <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                            class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <img src="./Docs/Assets/images/img15.jpg" class="md:h-64 h-60 object-cover w-full" alt="img">
                         <div class=" text-sm p-5">
                             <p class="text-center">Explore the best of Central America on this two-country adventure.
                                 Marvel
@@ -503,16 +602,16 @@
                         </div>
                     </div>
                     <div class="px-5 pb-5 flex">
-                        <buttom
+                        <a href="https://wa.link/8yp5nb" target="_blank"
                             class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
-                            Sign Up Today!</button>
+                            Sign Up Today!</a>
                     </div>
                 </div>
 
             </div>
 
             <div class="flex items-center max-w-lg w-full mx-auto justify-center md:mt-8 mt-5">
-                <a 
+                <a href="https://wa.link/24ncmg"
                     class="border-2 openContactFormBtn w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.8rem] font-semibold">
                     Contact Us
                 </a>
@@ -523,8 +622,7 @@
         <div
             class="max-w-7xl w-full md:mt-20 lg:flex-row flex-col flex items-center justify-between md:gap-10 gap-5 mt-8 mx-auto p-5">
             <div class="lg:max-w-[35%] w-full">
-                <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                    class="md:h-80 h-60 object-cover w-full" alt="img">
+                <img src="./Docs/Assets/images/flag.png" class="md:h-80 h-60  w-full" alt="img">
             </div>
             <div class="lg:max-w-[65%] w-full">
                 <p class="font-medium text-lg">Choosing your Costa Rica adventure can feel as overwhelming as navigating
@@ -609,7 +707,7 @@
                         year-round biodiversity.</li>
                 </ul>
                 <div class="flex items-center w-full mx-auto justify-center md:mt-8 mt-5">
-                    <a 
+                    <a
                         class="border-2 openContactFormBtn w-full p-3 md:text-lg rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.8rem] font-semibold">
                         Contact Us
                     </a>
@@ -631,31 +729,28 @@
                     <div class="swiper mySwiper w-full">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/fleet (1).jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/fleet (2).jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/fleet (3).jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/fleet (4).jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/fleet (5).jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/fleet (6).jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/fleet (7).jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/fleet (8).jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -674,31 +769,28 @@
                     <div class="swiper mySwiper w-full">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/Destinations (1).jpeg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/Destinations (1).jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/Destinations (1).png" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/Destinations (2).jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/Destinations (2).png" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/Destinations (3).jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/Destinations (4).jpg" alt="">
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://placehold.co/350x250" alt="">
+                                <img src="./Docs/Assets/images/Destinations (5).jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -707,7 +799,7 @@
 
             </div>
             <div class="flex items-center max-w-3xl w-full mx-auto justify-center md:mt-12 mt-5">
-                <a 
+                <a
                     class="border-2 openContactFormBtn w-full p-3 rounded-lg text-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.8rem] font-semibold">
                     Contact Us
                 </a>
@@ -735,7 +827,7 @@
                             spotting sea turtles in Tortuguero, or relaxing in Arenal’s natural hot springs!</p>
                     </div>
                     <div class="flex items-center max-w-3xl w-full mx-auto justify-center mt-8">
-                        <a 
+                        <a
                             class="openContactFormBtn border-2 w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.5rem] font-semibold">
                             Contact Us
                         </a>
@@ -755,7 +847,7 @@
                             it all. Let Nacion Travel help you plan your next adventure!</p>
                     </div>
                     <div class="flex items-center max-w-3xl w-full mx-auto justify-center mt-8">
-                        <a 
+                        <a
                             class="openContactFormBtn border-2 w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.5rem] font-semibold">
                             Contact Us
                         </a>
@@ -777,7 +869,7 @@
                             breathtaking. Join Nacion Travel for an unforgettable journey into the heart of nature.</p>
                     </div>
                     <div class="flex items-center max-w-3xl w-full mx-auto justify-center mt-8">
-                        <a 
+                        <a
                             class="openContactFormBtn border-2 w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.5rem] font-semibold">
                             Contact Us
                         </a>
@@ -793,19 +885,40 @@
                     <input type="radio" name="sliderSecond" id="slider2-item-1" checked>
                     <input type="radio" name="sliderSecond" id="slider2-item-2">
                     <input type="radio" name="sliderSecond" id="slider2-item-3">
+                    <input type="radio" name="sliderSecond" id="slider2-item-4">
+                    <input type="radio" name="sliderSecond" id="slider2-item-5">
+                    <input type="radio" name="sliderSecond" id="slider2-item-6">
+                    <input type="radio" name="sliderSecond" id="slider2-item-7">
+                    <input type="radio" name="sliderSecond" id="slider2-item-8">
+                    <input type="radio" name="sliderSecond" id="slider2-item-9">
 
                     <div class="cardsSecond">
                         <label class="cardNoSecond" for="slider2-item-1" id="songSecond-1">
-                            <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                                alt="songSecond">
+                            <img src="./Docs/Assets/images/BeautifulDestinations (1).jpeg" alt="songSecond">
                         </label>
                         <label class="cardNoSecond" for="slider2-item-2" id="songSecond-2">
-                            <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                                alt="songSecond">
+                            <img src="./Docs/Assets/images/BeautifulDestinations (1).jpg" alt="songSecond">
                         </label>
                         <label class="cardNoSecond" for="slider2-item-3" id="songSecond-3">
-                            <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                                alt="songSecond">
+                            <img src="./Docs/Assets/images/BeautifulDestinations (1).png" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-4" id="songSecond-4">
+                            <img src="./Docs/Assets/images/BeautifulDestinations (2).jpeg" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-5" id="songSecond-5">
+                            <img src="./Docs/Assets/images/BeautifulDestinations (2).jpg" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-6" id="songSecond-6">
+                            <img src="./Docs/Assets/images/BeautifulDestinations (3).jpg" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-7" id="songSecond-7">
+                            <img src="./Docs/Assets/images/BeautifulDestinations (4).jpg" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-8" id="songSecond-8">
+                            <img src="./Docs/Assets/images/BeautifulDestinations (5).jpg" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-9" id="songSecond-9">
+                            <img src="./Docs/Assets/images/BeautifulDestinations (6).jpg" alt="songSecond">
                         </label>
                     </div>
                 </div>
@@ -828,8 +941,8 @@
                         treasures of Costa Rica. Let us help you uncover the country’s best-kept secrets!</p>
                 </div>
                 <div class="md:max-w-[40%] w-full">
-                    <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                        alt="img" class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
+                    <img src="./Docs/Assets/images/mountain.jpeg" alt="img"
+                        class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
                 </div>
             </div>
         </div>
@@ -840,8 +953,8 @@
                 Travel Supports Costa Rica’s Ecosystems</h2>
             <div class="flex items-center md:flex-row flex-col-reverse md:mt-12 mt-5 justify-between md:gap-14 gap-5">
                 <div class="md:max-w-[40%] w-full">
-                    <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                        alt="img" class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
+                    <img src="./Docs/Assets/images/mountain.jpeg" alt="img"
+                        class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
                 </div>
                 <div class="md:max-w-[60%] w-full">
                     <p class="text-lg">At Nacion Travel, we’re committed to sustainable tourism that protects Costa
@@ -871,8 +984,8 @@
                         never forget!</p>
                 </div>
                 <div class="md:max-w-[40%] w-full">
-                    <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                        alt="img" class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
+                    <img src="./Docs/Assets/images/mountain.jpeg" alt="img"
+                        class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
                 </div>
             </div>
         </div>
@@ -882,8 +995,8 @@
                 Indulge in Comfort and Style</h2>
             <div class="flex items-center md:flex-row flex-col-reverse md:mt-12 mt-5 justify-between md:gap-14 gap-5">
                 <div class="md:max-w-[40%] w-full">
-                    <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-                        alt="img" class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
+                    <img src="./Docs/Assets/images/mountain.jpeg" alt="img"
+                        class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
                 </div>
                 <div class="md:max-w-[60%] w-full">
                     <p class="text-lg">Experience Costa Rica in luxury with Nacion Travel. From private guided tours to
@@ -897,7 +1010,7 @@
                 </div>
             </div>
             <div class="flex items-center max-w-4xl w-full mx-auto justify-center md:mt-12 mt-5">
-                <a 
+                <a
                     class="openContactFormBtn border-2 w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.8rem] font-semibold">
                     Contact Us
                 </a>
@@ -981,7 +1094,7 @@
                 </div>
             </div>
             <div class="flex items-center max-w-4xl w-full mx-auto justify-center md:mt-12 mt-5">
-                <a 
+                <a
                     class="openContactFormBtn border-2 w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.8rem] font-semibold">
                     Contact Us
                 </a>
@@ -997,14 +1110,84 @@
                 pristine beaches, Nacion Travel will help you create unforgettable memories. Contact us today to start
                 planning your dream Costa Rica excursion!</p>
             <div class="flex items-center max-w-4xl w-full mx-auto justify-center md:mt-8 mt-5">
-                <a 
+                <a
                     class="openContactFormBtn border-2 w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.8rem] font-semibold">
                     Contact Us
                 </a>
             </div>
         </div>
 
-        <div id="footer"></div>
+        <footer class="md:mt-20 mt-10 pt-20  bg-white">
+            <div class="max-w-7xl w-full mx-auto px-5 ">
+
+                <div class="flex items-center md:justify-between justify-center gap-10 md:flex-row flex-col">
+                    <img src="./Docs/Assets/images/logo.png" class="h-20" alt="logo">
+                    <p class="text-lg max-w-3xl text-center">From volcanoes and rainforests to pristine beaches, Nacion
+                        Travel offers unforgettable adventures in Costa Rica. Contact us today to start planning your
+                        dream vacation!</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:mt-16 mt-8  md:gap-14 gap-5">
+
+                    <div class="border p-5 w-full">
+                        <h2 class="text-2xl mb-4">Reservations & Offices</h2>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-zinc-300"></i>
+                            <p class="text-sm">US. 1332 Colt Creek Place, <br>
+                                Wesley Chapel FL 33543</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-3">
+                            <i class="fa-solid fa-location-dot text-zinc-300"></i>
+                            <p class="text-sm">CR. 100 Mts, De Puesto 10, <br>
+                                San Rafael, Alajuela 20108</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-3">
+                            <i class="fa-solid fa-mobile-screen-button text-zinc-300"></i>
+                            <a href="tel:+50688326969" class="text-sm">+506-8832-6969</a>
+                        </div>
+                        <div class="flex items-center gap-3 mt-3">
+                            <i class="fa-solid fa-envelope text-zinc-300"></i>
+                            <a href="mailto:info@naciontravel.com" class="text-sm">info@naciontravel.com</a>
+                        </div>
+                    </div>
+
+                    <div class="border p-5 w-full flex flex-col justify-center ">
+                        <h2 class="text-2xl mb-4">Office Hours</h2>
+                        <p class="text-sm">Monday to Friday <br>
+                            7:00 am to 6:00 pm</p>
+                        <p class="text-sm mt-3">Saturday <br>
+                            7:00 am to 12:00 noon</p>
+                    </div>
+
+                    <div class="border p-5 w-full flex flex-col justify-center">
+                        <h2 class="text-2xl mb-4">Social</h2>
+
+                        <div class="flex items-center gap-2">
+
+                            <a href="https://www.facebook.com/share/1C5GCk14c2/?mibextid=wwXIfr" target="_blank" class="w-10 h-10 border rounded-full flex items-center justify-center">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/naciontravel?igsh=MTlxYWRhcjF6cDYwdw==" target="_blank"
+                                class="w-10 h-10 border rounded-full flex items-center justify-center">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href=" https://www.tiktok.com/@nacion_travel?_t=ZS-8vBsGtnANS3&_r=1" target="_blank" class="w-10 h-10 border rounded-full flex items-center justify-center">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+
+                        </div>
+
+                        <button class="w-full p-3 mt-5 rounded-full cursor-pointer border">Tag us in your
+                            photos!</button>
+
+                    </div>
+
+                </div>
+
+                <p class="text-center p-5 ">Nacion Travel 2025 All Rights Reserved </p>
+
+            </div>
+        </footer>
 
     </div>
 
@@ -1076,130 +1259,128 @@
                 </div>
             </div>
 
-            <p class="text-center mt-10 cursor-pointer openPrivacuPolicyBtn" >Terms & Conditions</p>
+            <p class="text-center mt-10 cursor-pointer openPrivacuPolicyBtn">Terms & Conditions</p>
         </div>
     </div>
 
 
     <!-- privacy Policy -->
 
-     
+
     <div class="hidden z-50 privacyPolicy fixed inset-0 flex items-center justify-center">
         <div class="w-full h-screen bg-[#000000cc] fixed top-0 left-0 overlayPrivacy hidden"></div>
-            <div class="bg-white z-20 relative max-h-[85vh] overflow-auto p-5 rounded-sm border max-w-4xl w-full">
-                <h3 class="text-center mt-7 text-2xl">Terms and Conditions for Nacion Travel</h3>
-                <p class="mt-5">Welcome to Nacion Travel! These Terms and Conditions outline the rules and regulations
-                    for using our services, including our website, booking platform, and tours. By accessing or using
-                    our services, you agree to comply with these terms. Please read them carefully.
-                </p>
-                <h2 class="mt-5 font-semibold">1. Privacy and Data Collection</h2>
-                <p class="mt-2">At Nacion Travel, we value your privacy and are committed to protecting any personal
-                    information we collect. Our Privacy Policy explains how we handle your data, and by using our
-                    services, you consent to the collection and use of your information as described below.</p>
-                <h2 class="mt-5 font-semibold">1.1 Personal Information We Collect</h2>
-                <p class="mt-2">We collect personal information necessary to provide our services, including:</p>
-                <ul class="pl-5 list-disc space-y-2 mt-2">
-                    <li> Booking Information: When you book a tour, we collect details such as your name, contact
-                        information, payment details, and travel preferences. This information is used solely to
-                        complete
-                        your booking and is not stored unnecessarily.</li>
-                    <li> Communication Information: If you contact us via email, phone, or our website, we collect your
-                        contact details and the content of your messages to assist you effectively.</li>
-                    <li> Social Media Information: If you interact with us on platforms like Facebook, Instagram, or
-                        Twitter,
-                        we may collect information you share publicly or through direct messages.</li>
+        <div class="bg-white z-20 relative max-h-[85vh] overflow-auto p-5 rounded-sm border max-w-4xl w-full">
+            <h3 class="text-center mt-7 text-2xl">Terms and Conditions for Nacion Travel</h3>
+            <p class="mt-5">Welcome to Nacion Travel! These Terms and Conditions outline the rules and regulations
+                for using our services, including our website, booking platform, and tours. By accessing or using
+                our services, you agree to comply with these terms. Please read them carefully.
+            </p>
+            <h2 class="mt-5 font-semibold">1. Privacy and Data Collection</h2>
+            <p class="mt-2">At Nacion Travel, we value your privacy and are committed to protecting any personal
+                information we collect. Our Privacy Policy explains how we handle your data, and by using our
+                services, you consent to the collection and use of your information as described below.</p>
+            <h2 class="mt-5 font-semibold">1.1 Personal Information We Collect</h2>
+            <p class="mt-2">We collect personal information necessary to provide our services, including:</p>
+            <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li> Booking Information: When you book a tour, we collect details such as your name, contact
+                    information, payment details, and travel preferences. This information is used solely to
+                    complete
+                    your booking and is not stored unnecessarily.</li>
+                <li> Communication Information: If you contact us via email, phone, or our website, we collect your
+                    contact details and the content of your messages to assist you effectively.</li>
+                <li> Social Media Information: If you interact with us on platforms like Facebook, Instagram, or
+                    Twitter,
+                    we may collect information you share publicly or through direct messages.</li>
 
-                </ul>
-                <h2 class="mt-5 font-semibold">1.2 How We Use Personal Information</h2>
-                <p class="mt-2">We use your personal information for the following purposes:</p>
-                <ul class="pl-5 list-disc space-y-2 mt-2">
-                    <li> To provide, administer, and improve our tours and services.</li>
-                    <li> To communicate with you about your bookings, inquiries, or feedback.</li>
-                    <li> To prevent fraud, misuse of our services, and ensure the security of our systems.</li>
-                    <li> To comply with legal obligations and protect the rights and safety of our customers and staff.
-                    </li>
-                    <li> To conduct research and improve our services for a better customer experience.</li>
-                </ul>
-                <h2 class="mt-5 font-semibold">1.3 Disclosure of Personal Information</h2>
-                <p class="mt-2">We may share your personal information in the following circumstances:</p>
-                <ul class="pl-5 list-disc space-y-2 mt-2">
-                    <li> Service Providers: We work with trusted third-party providers (e.g., transportation,
-                        accommodations) who assist in delivering our services. They only access your information as
-                        necessary to perform their tasks.</li>
-                    <li> Legal Requirements: We may disclose your information to comply with legal obligations, protect
-                        our rights, prevent illegal activity, or ensure public safety.</li>
-                </ul>
-                <h2 class="mt-5 font-semibold">1.4 Your Rights</h2>
-                <p class="mt-2"> Under applicable privacy laws, you have the following rights:</p>
-                <ul class="pl-5 list-disc space-y-2 mt-2">
-                    <li> The right to know what personal information we collect and how it is used.</li>
-                    <li> The right to request the correction or deletion of your personal information.</li>
-                    <li> The right to be free from discrimination when exercising your privacy rights.</li>
-                    <li> We do not sell or share your personal information for advertising purposes.</li>
-                </ul>
-                <p class="mt-2">To exercise your rights, please contact us using the same method you initially used to
-                    communicate with us.</p>
-                <h2 class="mt-5 font-semibold">2. Booking and Payment</h2>
-                <h2 class="mt-2 font-semibold">2.1 Booking Confirmation</h2>
-                <p class="mt-2">All bookings are subject to availability. A booking is confirmed only after you receive
-                    a confirmation email from Nacion Travel.</p>
-                <h2 class="mt-5 font-semibold"> 2.2 Payment Terms</h2>
-                <ul class="pl-5 list-disc space-y-2 mt-2">
-                    <li> Full payment is required at the time of booking unless otherwise specified.</li>
-                    <li> We accept major credit cards, bank transfers, and other payment methods as indicated on our
-                        website.</li>
-                    <li> Prices are listed in USD and are subject to change without notice.</li>
-                </ul>
-                <h2 class="mt-5 font-semibold"> 2.3 Cancellations and Refunds</h2>
-                <ul class="pl-5 list-disc space-y-2 mt-2">
-                    <li> Cancellations made 30 days or more before the tour date will receive a full refund.</li>
-                    <li> Cancellations made 15-29 days before the tour date will receive a 50% refund.</li>
-                    <li> Cancellations made less than 15 days before the tour date are non-refundable.</li>
-                    <li> No-shows or early departures from tours are non-refundable.</li>
-                </ul>
-                <h2 class="mt-5 font-semibold"> 3. Tour Participation</h2>
-                <h2 class="mt-2 font-semibold"> 3.1 Health and Safety</h2>
-                <ul class="pl-5 list-disc space-y-2 mt-2">
-                    <li> Participants must inform Nacion Travel of any medical conditions, allergies, or special
-                        requirements at the time of booking.</li>
-                    <li> Some tours involve physical activity (e.g., hiking, zip-lining). Participants should ensure
-                        they are physically fit for the chosen tour.</li>
-                    <li> Nacion Travel reserves the right to refuse participation to anyone deemed unfit for a tour.
-                    </li>
-                </ul>
-                <h2 class="mt-5 font-semibold"> 3.2 Liability</h2>
-                <ul class="pl-5 list-disc space-y-2 mt-2">
-                    <li> Nacion Travel is not liable for any injuries, illnesses, or damages incurred during the tour.
-                    </li>
-                    <li> Participants are responsible for their personal belongings and travel insurance.</li>
-                </ul>
-                <h2 class="mt-5 font-semibold"> 3.3 Changes to Itineraries</h2>
-                <ul class="pl-5 list-disc space-y-2 mt-2">
-                    <li> Nacion Travel reserves the right to modify itineraries due to weather, safety concerns, or
-                        other unforeseen circumstances.</li>
-                    <li> If a tour is canceled by Nacion Travel, customers will receive a full refund or the option to
-                        reschedule.</li>
-                </ul>
-                <h2 class="mt-5 font-semibold"> 4. Intellectual Property</h2>
-                <p class="mt-2">All content on the Nacion Travel website, including text, images, logos, and videos, is
-                    the property of Nacion Travel and is protected by copyright laws. Unauthorized use of this content
-                    is strictly prohibited.</p>
-                <h2 class="mt-5 font-semibold"> 5. Governing Law</h2>
-                <p class="mt-2">These Terms and Conditions are governed by the laws of Costa Rica. Any disputes arising
-                    from the use of our services will be resolved in the courts of Costa Rica.</p>
-                <h2 class="mt-5 font-semibold"> 6. Contact Us</h2>
-                <p class="mt-2">If you have any questions about these Terms and Conditions, please contact us at:</p>
-                <a href="mailto:info@naciontravel.com" class="mt-2 block"><b>Email</b>: info@naciontravel.com</a>
-                <a href="tel:+50677778888" class="mt-2 block"><b>Phone</b>: +506 7777 8888</a>
-            </div>
+            </ul>
+            <h2 class="mt-5 font-semibold">1.2 How We Use Personal Information</h2>
+            <p class="mt-2">We use your personal information for the following purposes:</p>
+            <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li> To provide, administer, and improve our tours and services.</li>
+                <li> To communicate with you about your bookings, inquiries, or feedback.</li>
+                <li> To prevent fraud, misuse of our services, and ensure the security of our systems.</li>
+                <li> To comply with legal obligations and protect the rights and safety of our customers and staff.
+                </li>
+                <li> To conduct research and improve our services for a better customer experience.</li>
+            </ul>
+            <h2 class="mt-5 font-semibold">1.3 Disclosure of Personal Information</h2>
+            <p class="mt-2">We may share your personal information in the following circumstances:</p>
+            <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li> Service Providers: We work with trusted third-party providers (e.g., transportation,
+                    accommodations) who assist in delivering our services. They only access your information as
+                    necessary to perform their tasks.</li>
+                <li> Legal Requirements: We may disclose your information to comply with legal obligations, protect
+                    our rights, prevent illegal activity, or ensure public safety.</li>
+            </ul>
+            <h2 class="mt-5 font-semibold">1.4 Your Rights</h2>
+            <p class="mt-2"> Under applicable privacy laws, you have the following rights:</p>
+            <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li> The right to know what personal information we collect and how it is used.</li>
+                <li> The right to request the correction or deletion of your personal information.</li>
+                <li> The right to be free from discrimination when exercising your privacy rights.</li>
+                <li> We do not sell or share your personal information for advertising purposes.</li>
+            </ul>
+            <p class="mt-2">To exercise your rights, please contact us using the same method you initially used to
+                communicate with us.</p>
+            <h2 class="mt-5 font-semibold">2. Booking and Payment</h2>
+            <h2 class="mt-2 font-semibold">2.1 Booking Confirmation</h2>
+            <p class="mt-2">All bookings are subject to availability. A booking is confirmed only after you receive
+                a confirmation email from Nacion Travel.</p>
+            <h2 class="mt-5 font-semibold"> 2.2 Payment Terms</h2>
+            <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li> Full payment is required at the time of booking unless otherwise specified.</li>
+                <li> We accept major credit cards, bank transfers, and other payment methods as indicated on our
+                    website.</li>
+                <li> Prices are listed in USD and are subject to change without notice.</li>
+            </ul>
+            <h2 class="mt-5 font-semibold"> 2.3 Cancellations and Refunds</h2>
+            <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li> Cancellations made 30 days or more before the tour date will receive a full refund.</li>
+                <li> Cancellations made 15-29 days before the tour date will receive a 50% refund.</li>
+                <li> Cancellations made less than 15 days before the tour date are non-refundable.</li>
+                <li> No-shows or early departures from tours are non-refundable.</li>
+            </ul>
+            <h2 class="mt-5 font-semibold"> 3. Tour Participation</h2>
+            <h2 class="mt-2 font-semibold"> 3.1 Health and Safety</h2>
+            <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li> Participants must inform Nacion Travel of any medical conditions, allergies, or special
+                    requirements at the time of booking.</li>
+                <li> Some tours involve physical activity (e.g., hiking, zip-lining). Participants should ensure
+                    they are physically fit for the chosen tour.</li>
+                <li> Nacion Travel reserves the right to refuse participation to anyone deemed unfit for a tour.
+                </li>
+            </ul>
+            <h2 class="mt-5 font-semibold"> 3.2 Liability</h2>
+            <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li> Nacion Travel is not liable for any injuries, illnesses, or damages incurred during the tour.
+                </li>
+                <li> Participants are responsible for their personal belongings and travel insurance.</li>
+            </ul>
+            <h2 class="mt-5 font-semibold"> 3.3 Changes to Itineraries</h2>
+            <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li> Nacion Travel reserves the right to modify itineraries due to weather, safety concerns, or
+                    other unforeseen circumstances.</li>
+                <li> If a tour is canceled by Nacion Travel, customers will receive a full refund or the option to
+                    reschedule.</li>
+            </ul>
+            <h2 class="mt-5 font-semibold"> 4. Intellectual Property</h2>
+            <p class="mt-2">All content on the Nacion Travel website, including text, images, logos, and videos, is
+                the property of Nacion Travel and is protected by copyright laws. Unauthorized use of this content
+                is strictly prohibited.</p>
+            <h2 class="mt-5 font-semibold"> 5. Governing Law</h2>
+            <p class="mt-2">These Terms and Conditions are governed by the laws of Costa Rica. Any disputes arising
+                from the use of our services will be resolved in the courts of Costa Rica.</p>
+            <h2 class="mt-5 font-semibold"> 6. Contact Us</h2>
+            <p class="mt-2">If you have any questions about these Terms and Conditions, please contact us at:</p>
+            <a href="mailto:info@naciontravel.com" class="mt-2 block"><b>Email</b>: info@naciontravel.com</a>
+            <a href="tel:+50677778888" class="mt-2 block"><b>Phone</b>: +506 7777 8888</a>
+        </div>
     </div>
 
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="./Docs/javascript/Navbar.js"></script>
 <script src="./Docs/javascript/global.js"></script>
-<script src="./Docs/javascript/Footer.js"></script>
 
 <script>
 

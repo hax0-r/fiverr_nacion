@@ -141,8 +141,7 @@ input:user-invalid {
 }
 
 .homeBg {
-    /* background: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.253)), url(./Assets/homeBg.jpg) center/cover no-repeat; */
-    filter: grayscale();
+    background: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.253)), url(./Assets/images/mainBg.png) center/cover no-repeat;
 }
 
 .slider3 {
@@ -184,33 +183,76 @@ input:user-invalid {
         object-fit: cover;
     }
 
-    #item-1:checked~.cards #song-3,
+    /* Move previous previous image (two steps before active) */
+    #item-1:checked~.cards #song-5,
+    #item-2:checked~.cards #song-6,
+    #item-3:checked~.cards #song-1,
+    #item-4:checked~.cards #song-2,
+    #item-5:checked~.cards #song-3,
+    #item-6:checked~.cards #song-4 {
+        transform: translateX(-60%) scale(0.6);
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+    /* Move previous image (one step before active) */
+    #item-1:checked~.cards #song-6,
     #item-2:checked~.cards #song-1,
-    #item-3:checked~.cards #song-2 {
-        transform: translatex(-40%) scale(.8);
-        opacity: .4;
+    #item-3:checked~.cards #song-2,
+    #item-4:checked~.cards #song-3,
+    #item-5:checked~.cards #song-4,
+    #item-6:checked~.cards #song-5 {
+        transform: translateX(-40%) scale(0.8);
+        opacity: 0.4;
         z-index: 0;
     }
 
+    /* Move next image (one step after active) */
     #item-1:checked~.cards #song-2,
     #item-2:checked~.cards #song-3,
-    #item-3:checked~.cards #song-1 {
-        transform: translatex(40%) scale(.8);
-        opacity: .4;
+    #item-3:checked~.cards #song-4,
+    #item-4:checked~.cards #song-5,
+    #item-5:checked~.cards #song-6,
+    #item-6:checked~.cards #song-1 {
+        transform: translateX(40%) scale(0.8);
+        opacity: 0.4;
         z-index: 0;
     }
 
+    /* Move next next image (two steps after active) */
+    #item-1:checked~.cards #song-3,
+    #item-2:checked~.cards #song-4,
+    #item-3:checked~.cards #song-5,
+    #item-4:checked~.cards #song-6,
+    #item-5:checked~.cards #song-1,
+    #item-6:checked~.cards #song-2 {
+        transform: translateX(60%) scale(0.6);
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+
+    /* Set active image */
     #item-1:checked~.cards #song-1,
     #item-2:checked~.cards #song-2,
-    #item-3:checked~.cards #song-3 {
-        transform: translatex(0) scale(1);
+    #item-3:checked~.cards #song-3,
+    #item-4:checked~.cards #song-4,
+    #item-5:checked~.cards #song-5,
+    #item-6:checked~.cards #song-6 {
+        transform: translateX(0) scale(1);
         opacity: 1;
         z-index: 1;
-
-        img {
-            box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-        }
     }
+
+    #item-1:checked~.cards #song-1 img,
+    #item-2:checked~.cards #song-2 img,
+    #item-3:checked~.cards #song-3 img,
+    #item-4:checked~.cards #song-4 img,
+    #item-5:checked~.cards #song-5 img,
+    #item-6:checked~.cards #song-6 img {
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+
 }
 
 .slider3Second {
@@ -251,33 +293,60 @@ input:user-invalid {
         object-fit: cover;
     }
 
-    #slider2-item-1:checked~.cardsSecond #songSecond-3,
-    #slider2-item-2:checked~.cardsSecond #songSecond-1,
-    #slider2-item-3:checked~.cardsSecond #songSecond-2 {
-        transform: translatex(-40%) scale(.8);
-        opacity: .4;
+    #slider2-item-1:checked ~ .cardsSecond #songSecond-2,
+    #slider2-item-2:checked ~ .cardsSecond #songSecond-3,
+    #slider2-item-3:checked ~ .cardsSecond #songSecond-4,
+    #slider2-item-4:checked ~ .cardsSecond #songSecond-5,
+    #slider2-item-5:checked ~ .cardsSecond #songSecond-6,
+    #slider2-item-6:checked ~ .cardsSecond #songSecond-7,
+    #slider2-item-7:checked ~ .cardsSecond #songSecond-8,
+    #slider2-item-8:checked ~ .cardsSecond #songSecond-9,
+    #slider2-item-9:checked ~ .cardsSecond #songSecond-1 {
+        transform: translateX(40%) scale(0.8);
+        opacity: 0.4;
         z-index: 0;
     }
-
-    #slider2-item-1:checked~.cardsSecond #songSecond-2,
-    #slider2-item-2:checked~.cardsSecond #songSecond-3,
-    #slider2-item-3:checked~.cardsSecond #songSecond-1 {
-        transform: translatex(40%) scale(.8);
-        opacity: .4;
+    
+    #slider2-item-1:checked ~ .cardsSecond #songSecond-9,
+    #slider2-item-2:checked ~ .cardsSecond #songSecond-1,
+    #slider2-item-3:checked ~ .cardsSecond #songSecond-2,
+    #slider2-item-4:checked ~ .cardsSecond #songSecond-3,
+    #slider2-item-5:checked ~ .cardsSecond #songSecond-4,
+    #slider2-item-6:checked ~ .cardsSecond #songSecond-5,
+    #slider2-item-7:checked ~ .cardsSecond #songSecond-6,
+    #slider2-item-8:checked ~ .cardsSecond #songSecond-7,
+    #slider2-item-9:checked ~ .cardsSecond #songSecond-8 {
+        transform: translateX(-40%) scale(0.8);
+        opacity: 0.4;
         z-index: 0;
     }
-
-    #slider2-item-1:checked~.cardsSecond #songSecond-1,
-    #slider2-item-2:checked~.cardsSecond #songSecond-2,
-    #slider2-item-3:checked~.cardsSecond #songSecond-3 {
-        transform: translatex(0) scale(1);
+    
+    #slider2-item-1:checked ~ .cardsSecond #songSecond-1,
+    #slider2-item-2:checked ~ .cardsSecond #songSecond-2,
+    #slider2-item-3:checked ~ .cardsSecond #songSecond-3,
+    #slider2-item-4:checked ~ .cardsSecond #songSecond-4,
+    #slider2-item-5:checked ~ .cardsSecond #songSecond-5,
+    #slider2-item-6:checked ~ .cardsSecond #songSecond-6,
+    #slider2-item-7:checked ~ .cardsSecond #songSecond-7,
+    #slider2-item-8:checked ~ .cardsSecond #songSecond-8,
+    #slider2-item-9:checked ~ .cardsSecond #songSecond-9 {
+        transform: translateX(0) scale(1);
         opacity: 1;
         z-index: 1;
-
-        img {
-            box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-        }
     }
+    
+    #slider2-item-1:checked ~ .cardsSecond #songSecond-1 img,
+    #slider2-item-2:checked ~ .cardsSecond #songSecond-2 img,
+    #slider2-item-3:checked ~ .cardsSecond #songSecond-3 img,
+    #slider2-item-4:checked ~ .cardsSecond #songSecond-4 img,
+    #slider2-item-5:checked ~ .cardsSecond #songSecond-5 img,
+    #slider2-item-6:checked ~ .cardsSecond #songSecond-6 img,
+    #slider2-item-7:checked ~ .cardsSecond #songSecond-7 img,
+    #slider2-item-8:checked ~ .cardsSecond #songSecond-8 img,
+    #slider2-item-9:checked ~ .cardsSecond #songSecond-9 img {
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+    
 }
 
 .swiper {

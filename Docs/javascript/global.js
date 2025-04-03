@@ -1,3 +1,19 @@
+// navbar
+
+const closeNav = document.querySelectorAll(".closeNav")
+const openNav = document.getElementById("openNav")
+const resNav = document.getElementById("resNav")
+
+openNav.addEventListener('click', () => {
+    resNav.style.width = "100%"
+})
+
+closeNav.forEach(close => {
+    close.addEventListener('click', () => {
+        resNav.style.width = "0%"
+    })
+})
+
 // scroll to the top
 
 const bottomToTopScroll = document.getElementById("bottomToTopScroll");
@@ -24,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 let index2 = 1;
-const totalItems2 = 3;
+const totalItems2 = 9;
 const intervalTime2 = 3000;
 
 function autoPlay2() {
@@ -38,7 +54,7 @@ function autoPlay2() {
 setInterval(autoPlay2, intervalTime2);
 
 let index1 = 1;
-const totalItems1 = 3;
+const totalItems1 = 6;
 const intervalTime1 = 3000;
 
 function autoPlay() {
