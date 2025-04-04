@@ -293,70 +293,82 @@ input:user-invalid {
         object-fit: cover;
     }
 
-    #slider2-item-1:checked ~ .cardsSecond #songSecond-2,
-    #slider2-item-2:checked ~ .cardsSecond #songSecond-3,
-    #slider2-item-3:checked ~ .cardsSecond #songSecond-4,
-    #slider2-item-4:checked ~ .cardsSecond #songSecond-5,
-    #slider2-item-5:checked ~ .cardsSecond #songSecond-6,
-    #slider2-item-6:checked ~ .cardsSecond #songSecond-7,
-    #slider2-item-7:checked ~ .cardsSecond #songSecond-8,
-    #slider2-item-8:checked ~ .cardsSecond #songSecond-9,
-    #slider2-item-9:checked ~ .cardsSecond #songSecond-1 {
+    #slider2-item-1:checked~.cardsSecond #songSecond-2,
+    #slider2-item-2:checked~.cardsSecond #songSecond-3,
+    #slider2-item-3:checked~.cardsSecond #songSecond-4,
+    #slider2-item-4:checked~.cardsSecond #songSecond-5,
+    #slider2-item-5:checked~.cardsSecond #songSecond-6,
+    #slider2-item-6:checked~.cardsSecond #songSecond-7,
+    #slider2-item-7:checked~.cardsSecond #songSecond-8,
+    #slider2-item-8:checked~.cardsSecond #songSecond-9,
+    #slider2-item-9:checked~.cardsSecond #songSecond-1 {
         transform: translateX(40%) scale(0.8);
         opacity: 0.4;
         z-index: 0;
     }
-    
-    #slider2-item-1:checked ~ .cardsSecond #songSecond-9,
-    #slider2-item-2:checked ~ .cardsSecond #songSecond-1,
-    #slider2-item-3:checked ~ .cardsSecond #songSecond-2,
-    #slider2-item-4:checked ~ .cardsSecond #songSecond-3,
-    #slider2-item-5:checked ~ .cardsSecond #songSecond-4,
-    #slider2-item-6:checked ~ .cardsSecond #songSecond-5,
-    #slider2-item-7:checked ~ .cardsSecond #songSecond-6,
-    #slider2-item-8:checked ~ .cardsSecond #songSecond-7,
-    #slider2-item-9:checked ~ .cardsSecond #songSecond-8 {
+
+    #slider2-item-1:checked~.cardsSecond #songSecond-9,
+    #slider2-item-2:checked~.cardsSecond #songSecond-1,
+    #slider2-item-3:checked~.cardsSecond #songSecond-2,
+    #slider2-item-4:checked~.cardsSecond #songSecond-3,
+    #slider2-item-5:checked~.cardsSecond #songSecond-4,
+    #slider2-item-6:checked~.cardsSecond #songSecond-5,
+    #slider2-item-7:checked~.cardsSecond #songSecond-6,
+    #slider2-item-8:checked~.cardsSecond #songSecond-7,
+    #slider2-item-9:checked~.cardsSecond #songSecond-8 {
         transform: translateX(-40%) scale(0.8);
         opacity: 0.4;
         z-index: 0;
     }
-    
-    #slider2-item-1:checked ~ .cardsSecond #songSecond-1,
-    #slider2-item-2:checked ~ .cardsSecond #songSecond-2,
-    #slider2-item-3:checked ~ .cardsSecond #songSecond-3,
-    #slider2-item-4:checked ~ .cardsSecond #songSecond-4,
-    #slider2-item-5:checked ~ .cardsSecond #songSecond-5,
-    #slider2-item-6:checked ~ .cardsSecond #songSecond-6,
-    #slider2-item-7:checked ~ .cardsSecond #songSecond-7,
-    #slider2-item-8:checked ~ .cardsSecond #songSecond-8,
-    #slider2-item-9:checked ~ .cardsSecond #songSecond-9 {
+
+    #slider2-item-1:checked~.cardsSecond #songSecond-1,
+    #slider2-item-2:checked~.cardsSecond #songSecond-2,
+    #slider2-item-3:checked~.cardsSecond #songSecond-3,
+    #slider2-item-4:checked~.cardsSecond #songSecond-4,
+    #slider2-item-5:checked~.cardsSecond #songSecond-5,
+    #slider2-item-6:checked~.cardsSecond #songSecond-6,
+    #slider2-item-7:checked~.cardsSecond #songSecond-7,
+    #slider2-item-8:checked~.cardsSecond #songSecond-8,
+    #slider2-item-9:checked~.cardsSecond #songSecond-9 {
         transform: translateX(0) scale(1);
         opacity: 1;
         z-index: 1;
     }
-    
-    #slider2-item-1:checked ~ .cardsSecond #songSecond-1 img,
-    #slider2-item-2:checked ~ .cardsSecond #songSecond-2 img,
-    #slider2-item-3:checked ~ .cardsSecond #songSecond-3 img,
-    #slider2-item-4:checked ~ .cardsSecond #songSecond-4 img,
-    #slider2-item-5:checked ~ .cardsSecond #songSecond-5 img,
-    #slider2-item-6:checked ~ .cardsSecond #songSecond-6 img,
-    #slider2-item-7:checked ~ .cardsSecond #songSecond-7 img,
-    #slider2-item-8:checked ~ .cardsSecond #songSecond-8 img,
-    #slider2-item-9:checked ~ .cardsSecond #songSecond-9 img {
+
+    #slider2-item-1:checked~.cardsSecond #songSecond-1 img,
+    #slider2-item-2:checked~.cardsSecond #songSecond-2 img,
+    #slider2-item-3:checked~.cardsSecond #songSecond-3 img,
+    #slider2-item-4:checked~.cardsSecond #songSecond-4 img,
+    #slider2-item-5:checked~.cardsSecond #songSecond-5 img,
+    #slider2-item-6:checked~.cardsSecond #songSecond-6 img,
+    #slider2-item-7:checked~.cardsSecond #songSecond-7 img,
+    #slider2-item-8:checked~.cardsSecond #songSecond-8 img,
+    #slider2-item-9:checked~.cardsSecond #songSecond-9 img {
         box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
     }
-    
+
 }
 
 .swiper {
     margin: 10px auto;
     width: 100%;
-    height: 240px;
+    height: 340px;
+}
+
+@media screen and (max-width:769px) {
+    .swiper{
+        height: 200px;
+    }
 }
 
 .swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
