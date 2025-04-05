@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacion Travel</title>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../Docs/Style.css">
+
+</head>
+
+<body>
+
+    <div id="bottomToTopScroll"></div>
+
+    <div class="bg-[#f2f6f9] overflow-x-hidden">
+
+        <div class="homeBg h-full">
+            <!-- navbar -->
+
+
+
+            <div class="bg-[#f2f6f9] p-3 lg:block hidden">
+                <div class="flex items-center justify-between gap-5 flex-wrap max-w-7xl w-full mx-auto">
+                    <a href="https://wa.link/24ncmg" target="_blank"
+                        class="flex font-medium tracking-wide text-sm items-center gap-1">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        +506-8832-6969
+                    </a>
+                    <a href="mailto:info@naciontravel.com"
+                        class="flex font-medium tracking-wide text-sm items-center gap-1">
+                        <i class="fa-solid fa-envelope"></i>
+                        info@naciontravel.com
+                    </a>
+                    <a href="https://www.facebook.com/share/1C5GCk14c2/?mibextid=wwXIfr"
+                        class="flex font-medium tracking-wide text-sm items-center gap-1">
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/naciontravel?igsh=MTlxYWRhcjF6cDYwdw=="
+                        class="flex font-medium tracking-wide text-sm items-center gap-1">
+                        Instagram
+                    </a>
+                    <a href=" https://www.tiktok.com/@nacion_travel?_t=ZS-8vBsGtnANS3&_r=1"
+                        class="flex font-medium tracking-wide text-sm items-center gap-1">
+                        TikTok
+                    </a>
+                    <div class="relative inline-block text-left" id="dropdown-wrapper">
+                        <button id="dropdownButton"
+                            class="inline-flex justify-between items-center w-20 px-4 py-2 border rounded-lg shadow-sm text-gray-700 hover:bg-gray-50">
+                            es
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <div id="dropdownMenu"
+                            class="origin-top-right absolute right-0 mt-2 w-20 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden z-10">
+                            <div class="py-1">
+                                <a href="../fr/index.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">fr</a>
+                                <a href="../index.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">en</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: 0%;" id="resNav"
+                class="fixed transition-all duration-500 overflow-hidden h-screen top-0 left-0 bg-white z-50">
+                <div class="flex items-center justify-center flex-col">
+                    <div class="flex p-5 mt-10 items-center justify-between">
+                        <a href="./index.html">
+                            <img src="../Docs/Assets/images/logo.png" class="h-20" alt="logo">
+                        </a>
+                        <i class="fa-solid cursor-pointer closeNav fa-x text-xl absolute top-8 right-8"></i>
+                    </div>
+
+                    <div
+                        class="mt-8 text-nowrap px-5 w-full flex flex-col gap-10 items-center text-center justify-between h-[80vh] overflow-auto">
+                        <ul class="  flex-col gap-8 flex ">
+                            <li> <a href="./excursions.html"
+                                    class=" text-nowrap capitalize cursor-pointer transition-all duration-500">
+                                    excursiones</a>
+                            </li>
+                            <li> <a href="./about.html"
+                                    class=" text-nowrap capitalize cursor-pointer transition-all duration-500">
+                                    Sobre nosotras</a></li>
+                            <li> <a
+                                    class=" closeNav openContactFormBtn text-nowrap capitalize cursor-pointer transition-all duration-500">
+                                    Contacta con nosotras</a></li>
+                            <li> <a href="https://wa.link/24ncmg" target="_blank"
+                                    class="flex text-center justify-center font-medium tracking-wide text-sm items-center gap-1">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    +506-8832-6969
+                                </a></li>
+                            <li> <a href="mailto:info@naciontravel.com"
+                                    class="flex text-center justify-center font-medium tracking-wide text-sm items-center gap-1">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    info@naciontravel.com
+                                </a></li>
+                            <li> <a href="https://www.facebook.com/share/1C5GCk14c2/?mibextid=wwXIfr"
+                                    class="flex justify-center font-medium tracking-wide text-sm items-center gap-1">
+                                    Facebook
+                                </a></li>
+                            <li> <a href="https://www.instagram.com/naciontravel?igsh=MTlxYWRhcjF6cDYwdw=="
+                                    class="flex justify-center font-medium tracking-wide text-sm items-center gap-1">
+                                    Instagram
+                                </a></li>
+                            <li> <a href=" https://www.tiktok.com/@nacion_travel?_t=ZS-8vBsGtnANS3&_r=1"
+                                    class="flex justify-center font-medium tracking-wide text-sm items-center gap-1">
+                                    TikTok
+                                </a></li>
+                            <li>
+                                <ul class="relative inline-block">
+                                    <button id="lang-btn"
+                                        class="border rounded-lg flex items-center gap-1 py-1 px-3 cursor-pointer">
+                                        es <i class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                    <ul id="lang-menu"
+                                        class="absolute hidden bg-white border rounded-lg mt-1 shadow-lg z-10">
+                                        <li><a href="../fr/index.html" class="block px-5 py-1">fr</a></li>
+                                        <li><a href="../index.html" class="block px-5 py-1">en</a></li>
+                                    </ul>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="w-full">
+                <div class=" w-full h-28 flex items-center justify-center">
+                    <div class="flex items-center justify-between max-w-7xl w-full mx-auto p-5">
+                        <a href="./index.html">
+                            <img src="../Docs/Assets/images/logo.png" class="h-20" alt="logo">
+                        </a>
+                        <div class="flex items-center gap-3">
+                            <ul class="hidden items-center justify-center gap-8 lg:flex ">
+                                <li> <a href="./excursions.html"
+                                        class=" capitalize magra cursor-pointer transition-all duration-500">
+                                        excursiones</a>
+                                </li>
+                                <li> <a href="./about.html"
+                                        class=" capitalize magra cursor-pointer transition-all duration-500">
+                                        Sobre nosotras</a></li>
+                                <li> <a
+                                        class="openContactFormBtn capitalize magra cursor-pointer transition-all duration-500">
+                                        Contacta con nosotras</a></li>
+                            </ul>
+                            <div class="lg:hidden">
+                                <i class="fa-solid fa-bars text-2xl cursor-pointer" id="openNav"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- navbar -->
+            <div
+                class="max-w-7xl relative min-h-[calc(100vh-8rem)] flex md:items-end items-center justify-center w-full mx-auto p-5">
+                <div class="slider3 absolute md:left-0 md:bottom-10">
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2">
+                    <input type="radio" name="slider" id="item-3">
+                    <input type="radio" name="slider" id="item-4">
+                    <input type="radio" name="slider" id="item-5">
+                    <input type="radio" name="slider" id="item-6">
+                    <div class="cards">
+                        <label class="card" for="item-1" id="song-1">
+                            <img src="../Docs/Assets/images/header (1).jpeg" alt="song">
+                        </label>
+                        <label class="card" for="item-2" id="song-2">
+                            <img src="../Docs/Assets/images/header (1).jpg" alt="song">
+                        </label>
+                        <label class="card" for="item-3" id="song-3">
+                            <img src="../Docs/Assets/images/header (1).png" alt="song">
+                        </label>
+                        <label class="card" for="item-4" id="song-4">
+                            <img src="../Docs/Assets/images/header (2).jpg" alt="song">
+                        </label>
+                        <label class="card" for="item-5" id="song-5">
+                            <img src="../Docs/Assets/images/header (2).png" alt="song">
+                        </label>
+                        <label class="card" for="item-6" id="song-6">
+                            <img src="../Docs/Assets/images/header (3).png" alt="song">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl w-full md:mt-12 mt-8 mx-auto p-5">
+            <h1 class="md:text-4xl text-xl text-center max-w-6xl mx-auto !leading-tight">Desde majestuosos volcanes y
+                exuberantes selvas tropicales hasta playas vírgenes, descubra lo mejor de Costa Rica con nuestros tours
+                cuidadosamente seleccionados.</h1>
+
+            <div class="grid md:gap-5 w-full gap-8 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:mt-16 mt-8">
+                <div class="w-full">
+                    <img src="../Docs/Assets/images/Volcanoes.png" class="md:h-64 h-60 object-cover w-full" alt="img">
+                    <div class="border p-5 border-zinc-300 mt-3 text-center ">
+                        <h2 class="text-lg font-semibold">Volcanes de Costa Rica</h2>
+                        <p class="pt-2 text-sm">Costa Rica alberga más de 200 formaciones volcánicas, con 7 volcanes
+                            actualmente activos. De estos, 5 son accesibles para los turistas y ofrecen increíbles
+                            oportunidades para explorar paisajes espectaculares, caminar hasta cráteres volcánicos y
+                            relajarse en aguas termales naturales.
+                            Descubra el poder y la belleza de los volcanes de Costa Rica, desde el icónico Arenal hasta
+                            el impresionante Poás, y experimente una de las maravillas naturales más singulares del
+                            mundo.</p>
+                    </div>
+
+                </div>
+                <div class="w-full">
+                    <img src="../Docs/Assets/images/Rainforest.png" class="md:h-64 h-60 object-cover w-full" alt="img">
+                    <div class="border p-5 border-zinc-300 mt-3 text-center">
+                        <h2 class="text-lg font-semibold">Paisajes de Selva Tropical</h2>
+                        <p class="pt-2 text-sm">Costa Rica es famosa por sus exuberantes selvas tropicales, que cubren
+                            más del 50% del país y se encuentran entre los lugares con mayor biodiversidad del planeta.
+                            Hogar del 5% de las especies del mundo, estas selvas tropicales ofrecen experiencias
+                            inolvidables, como avistar monos, perezosos y aves exóticas, recorrer densos senderos
+                            selváticos y explorar cascadas.
+                            Con áreas protegidas como el Parque Nacional Corcovado y Manuel Antonio, las selvas
+                            tropicales de Costa Rica son un paraíso tanto para los amantes de la naturaleza como para
+                            los ecoturistas.</p>
+                    </div>
+
+                </div>
+                <div class="w-full">
+                    <img src="../Docs/Assets/images/Beaches.png" class="md:h-64 h-60 object-cover w-full" alt="img">
+                    <div class="border p-5 border-zinc-300 mt-3 text-center">
+                        <h2 class="text-lg font-semibold">Playas Increíbles</h2>
+                        <p class="pt-2 text-sm">Costa Rica cuenta con más de 1287 kilómetros de impresionante costa, con
+                            playas que van desde prístinas arenas blancas hasta espectaculares costas volcánicas negras.
+                            Ya sea que busque surfear olas de clase mundial en Tamarindo, relajarse en las playas
+                            rodeadas de palmeras de Manuel Antonio o explorar las recónditas costas de la Península de
+                            Osa, las playas de Costa Rica ofrecen algo para todos los gustos. Con cálidas aguas
+                            turquesas, abundante vida silvestre y atardeceres impresionantes, estas joyas costeras son
+                            una visita obligada para cualquier viajero.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center max-w-lg w-full mx-auto justify-center md:mt-8 mt-5">
+                <button
+                    class="border-2 cursor-pointer openContactFormBtn w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.8rem] font-semibold">
+                    Contacta con nosotras
+                </button>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl w-full md:mt-20 mt-8 mx-auto p-5">
+            <h2 class="md:text-4xl text-xl text-center max-w-6xl mx-auto !leading-tight">
+                Nuestras aventuras</h2>
+
+            <div class="grid md:gap-5 gap-8 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:mt-12 mt-8">
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Explorar y empoderar</p>
+                        <img src="../Docs/Assets/images/img (2).png" class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <div class=" text-sm p-5">
+                            <p class="text-center">Sumérgete en la vibrante cultura y los impresionantes paisajes de
+                                Costa Rica en este viaje de voluntariado. Pasa cuatro días en el encantador pueblo de
+                                Santos, donde contribuirás a proyectos significativos como pintar escuelas, plantar
+                                huertos comunitarios o limpiar áreas locales. Después, relájate en las impresionantes
+                                playas de arena blanca de Manuel Antonio y explora su famoso parque nacional, hogar de
+                                monos, perezosos, tortugas marinas y aves exóticas. Culmina tu aventura con un
+                                emocionante tour de canopy por la selva tropical y un safari de cocodrilos por la costa
+                                de Puntarenas.</p>
+                            <p class="mt-4"><span class="font-semibold">Duración</span>: 10-12 días</p>
+                            <p class="mt-1"><span class="font-semibold">Extensión opcional</span>: Exploración de la
+                                Bahía Drake
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/urhqfm
+                        " target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Impacto Pura Vida</p>
+                        <img src="../Docs/Assets/images/img (3).png" class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <div class=" text-sm p-5">
+                            <p class="text-center">Marque la diferencia en la comunidad rural de Santos mediante trabajo
+                                voluntario práctico, como pintar escuelas o crear huertos comunitarios. Después,
+                                sumérjase en las maravillas naturales de Costa Rica con una aventura en kayak por el
+                                lago Arenal, un baño en aguas termales naturales y un recorrido educativo por una
+                                plantación de café local. Este viaje combina un servicio valioso con experiencias
+                                inolvidables al aire libre.</p>
+                            <p class="mt-4"><span class="font-semibold">Duración</span>: 8-9 días
+                            </p>
+                            <p class="mt-1"><span class="font-semibold">Extensión opcional</span>: Rafting en aguas
+                                bravas
+
+                                Emociones</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/urhqfm" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Costa Rica al Descubierto</p>
+                        <img src="../Docs/Assets/images/img (4).png" class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <div class=" text-sm p-5">
+                            <p class="text-center">Contempla el imponente Volcán Arenal, navega en kayak por las
+                                cristalinas aguas del Lago Arenal y relájate en aguas termales naturales. Después, lleva
+                                tu aventura a nuevas alturas con un emocionante recorrido en tirolesa por el dosel del
+                                bosque tropical. Este viaje es perfecto tanto para amantes de la naturaleza como para
+                                quienes buscan emociones fuertes.</p>
+                            <p class="mt-4"><span class="font-semibold">Duración</span>: 9-10 días
+                            </p>
+                            <p class="mt-1"><span class="font-semibold">Extensión opcional</span>: Rafting
+                                Aventura</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/ywgiqw" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Costa Rica de costa a costa</p>
+                        <img src="../Docs/Assets/images/img (5).png" class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <div class=" text-sm p-5">
+                            <p class="text-center">Viva lo mejor de las costas del Pacífico y el Caribe de Costa Rica en
+                                este inolvidable viaje. Acérquese a las tortugas marinas en Tortuguero, descienda en
+                                kayak por el río Sarapiquí y disfrute en bicicleta de los exuberantes paisajes al pie de
+                                un volcán. Relájese en las aguas termales del Arenal y deslícese entre las copas de los
+                                árboles en un tour de canopy en tirolesa en Rincón de la Vieja.
+                            </p>
+                            <p class="mt-4"><span class="font-semibold">Duración</span>: 9-10 días
+                            </p>
+                            <p class="mt-1"><span class="font-semibold">Extensión opcional</span>: Aventura de rafting
+                                en aguas bravas</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/x7wqg5" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Lo más destacado de Costa Rica</p>
+                        <img src="../Docs/Assets/images/img (6).png" class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <div class=" text-sm p-5">
+                            <p class="text-center">Descubre la combinación perfecta de naturaleza y cultura en este tour
+                                lleno de acción. Navega en kayak por las serenas aguas del Lago Arenal, rodeado de
+                                impresionantes vistas del Volcán Arenal. Después, súbete a las copas de los árboles en
+                                una emocionante aventura en tirolesa por selvas tropicales ricas en vida silvestre,
+                                donde podrás avistar monos, tucanes y perezosos. Sumérgete en las ricas tradiciones de
+                                Costa Rica con una visita a una plantación de café local y aprende sobre el proceso del
+                                grano a la taza. Este tour ofrece aventura, vida silvestre e inmersión cultural, todo en
+                                una experiencia inolvidable.</p>
+                            <p class="mt-4"><span class="font-semibold">Duración</span>: 8-9 días
+                            </p>
+                            <p class="mt-1"><span class="font-semibold">Extensión opcional</span>: Aventura de rafting
+                                en aguas bravas</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/ykko7s" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Costa Rica a fondo</p>
+                        <img src="../Docs/Assets/images/img (7).png" class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <div class=" text-sm p-5">
+                            <p class="text-center">Embárcate en un viaje transformador de dos semanas por la
+                                impresionante campiña costarricense. Dedica tiempo valioso como voluntario en las
+                                comunidades locales, donde contribuirás a proyectos como pintar escuelas, plantar
+                                huertos o apoyar iniciativas de conservación. Sumérgete en la vibrante cultura, conecta
+                                con la amable gente local y explora la impresionante belleza natural del país, desde
+                                exuberantes selvas tropicales hasta playas vírgenes. Este viaje es perfecto para
+                                viajeros que buscan dejar una huella imborrable mientras disfrutan de lo mejor de Costa
+                                Rica.</p>
+                            <p class="mt-4"><span class="font-semibold">Duración:</span> 14 días</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/1dlyno" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Aventura de Voluntariado en Costa Rica</p>
+                        <img src="../Docs/Assets/images/img (8).png" class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <div class=" text-sm p-5">
+                            <p class="text-center">Únete a esta aventura de 8 días para explorar los impresionantes
+                                volcanes, los serenos lagos y las vibrantes comunidades de Costa Rica. Participa como
+                                voluntario en proyectos significativos y deja una huella positiva en los lugares que
+                                visites. Este viaje es tan gratificante como inolvidable.</p>
+                            <p class="mt-4"><span class="font-semibold">Duración:</span> 8 días
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/vsda2h" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Costa de San José y Puntarenas</p>
+                        <img src="../Docs/Assets/images/img (9).png" class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <div class=" text-sm p-5">
+                        <p class="text-center">Dile "Pura Vida" a la increíble vida silvestre y cultura de Costa Rica en esta breve pero encantadora aventura. Observa monos, perezosos y loros en su hábitat natural, y conecta con estudiantes locales para experimentar la calidez de la cultura costarricense. Añade una excursión opcional de rafting para una dosis extra de emoción.</p>
+                        <p class="mt-4"><span class="font-semibold">Duración</span>: 5-6 días
+                        </p>
+                        <p class="mt-1"><span class="font-semibold">Extensión opcional</span>: Aventura de rafting</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/25z7g7" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Vida Silvestre y Aventura en Costa Rica</p>
+                        <img src="../Docs/Assets/images/img (10).png" class="md:h-64 h-60 object-cover w-full"
+                        alt="img">
+                        <div class=" text-sm p-5">
+                        <p class="text-center">Explore los destinos más emblemáticos de Costa Rica, desde las zonas de anidación de tortugas de Tortuguero hasta las aguas termales y las aventuras en kayak de Arenal. Viaje a los bosques nubosos de Monteverde para avistar monos aulladores y coloridas ranas arbóreas. Este viaje es el sueño de cualquier amante de la naturaleza.</p>
+                        <p class="mt-4"><span class="font-semibold">Duración</span>: 8-9 días
+                        </p>
+                        <p class="mt-1"><span class="font-semibold">Extensión opcional</span>: Aventura de rafting en aguas bravas</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/z89yw3" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Aventura de las Girl Scouts</p>
+                        <img src="../Docs/Assets/images/img (11).png" class="md:h-64 h-60 object-cover w-full"
+                        alt="img">
+                        <div class=" text-sm p-5">
+                        <p class="text-center">Diseñada para las Girl Scouts, esta aventura educativa te lleva a través de los exuberantes paisajes de Costa Rica. Relájate en las aguas termales de Arenal, explora las copas de los árboles tropicales de Monteverde y aprende sobre la rica biodiversidad del país. Es la combinación perfecta de diversión y aprendizaje. </p>
+                        <p class="mt-4"><span class="font-semibold">Duración</span>: 9-10 días
+                        </p>
+                        <p class="mt-1"><span class="font-semibold">Extensión opcional</span>: Aventura de rafting en aguas bravas</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/xd7d5w" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Selvas tropicales, ríos y cultura</p>
+                        <img src="../Docs/Assets/images/img (12).png" class="md:h-64 h-60 object-cover w-full"
+                        alt="img">
+                        <div class=" text-sm p-5">
+                        <p class="text-center">Vive Costa Rica como un local en este tour inmersivo. Sumérgete en las aguas termales de Arenal, prueba piñas orgánicas, navega en kayak por ríos pintorescos y sumérgete en la cultura caribeña con clases de baile y cocina. Comienza tus días con yoga matutino para una relajación total.</p>
+                        <p class="mt-4"><span class="font-semibold">Duración</span>: 9-11 días
+                        </p>
+                        <p class="mt-1"><span class="font-semibold">Extensión opcional</span>: Escapada a la playa de Manuel Antonio</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/gydzmx" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Inmersión lingüística y aventura</p>
+                        <img src="../Docs/Assets/images/img (13).png" class="md:h-64 h-60 object-cover w-full"
+                        alt="img">
+                        <div class=" text-sm p-5">
+                        <p class="text-center">¡Aprende español mientras exploras las maravillas naturales de Costa Rica! Cada mañana, practica vocabulario nuevo antes de salir a interactuar con la gente local y experimentar la cultura del país de primera mano. Es la manera perfecta de aprender un idioma mientras te diviertes. </p>
+                        <p class="mt-4"><span class="font-semibold">Duración</span>: 8-9 días
+                        </p>
+                        <p class="mt-1"><span class="font-semibold">Extensión opcional</span>: Aventura de rafting en aguas bravas</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/j4gus0" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Norte de Costa Rica</p>
+                        <img src="../Docs/Assets/images/img (14).png" class="md:h-64 h-60 object-cover w-full"
+                        alt="img">
+                        <div class=" text-sm p-5">
+                        <p class="text-center">Descubre la belleza del norte de Costa Rica, desde el burbujeante volcán Rincón de la Vieja hasta las cristalinas aguas del lago Arenal. Pasee a caballo hasta cascadas escondidas, explore los bosques nubosos de Monteverde y experimente la cultura vaquera de Guanacaste.</p>
+                        <p class="mt-4"><span class="font-semibold">Duración</span>: 8-9 días
+                        </p>
+                        <p class="mt-1"><span class="font-semibold">Extensión opcional</span>: Aventura de rafting en aguas bravas</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/a949sg" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Guerrero Ecológico de Costa Rica</p>
+                        <img src="../Docs/Assets/images/img (15).png" class="md:h-64 h-60 object-cover w-full"
+                        alt="img">
+                        <div class=" text-sm p-5">
+                        <p class="text-center">Sumérgete en la biodiversidad de Costa Rica con proyectos de conservación prácticos en la Península de Osa, desde el monitoreo de tortugas marinas hasta la reforestación. Explora el Parque Nacional Corcovado, navega en kayak por los manglares y visita una granja de chocolate sostenible. Termina con el avistamiento de ballenas en Uvita para una combinación perfecta de impacto y aventura.
+                        </p>
+                        <p class="mt-4"><span class="font-semibold">Duración</span>: 12 - 14 días
+                        </p>
+                        <p class="mt-1"><span class="font-semibold">Extensión opcional</span>: Encuentro con la vida silvestre en la Península de Osa</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/iasew3" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+                <div class="w-full border flex flex-col justify-between">
+                    <div class="">
+                        <p class="text-center text-xl p-2">Panamá y Costa Rica</p>
+                        <img src="../Docs/Assets/images/img (1).png" class="md:h-64 h-60 object-cover w-full" alt="img">
+                        <div class=" text-sm p-5">
+                        <p class="text-center">Explora lo mejor de Centroamérica en esta aventura por dos países.
+                        Maravíllate con el Canal de Panamá, explora la selva tropical de Bocas del Toro y luego cruza a Costa Rica para relajarte en la playa, hacer senderismo en volcanes y deslizarte en tirolesa por el dosel.</p>
+                        <p class="mt-4"><span class="font-semibold">Duración</span>: 8-9 días
+                        </p>
+                        <p class="mt-1"><span class="font-semibold">Extensión opcional</span>: Aventura de rafting en aguas bravas</p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 flex">
+                        <a href="https://wa.link/8yp5nb" target="_blank"
+                            class="bg-gradient-to-r w-full from-[#94b9ff] via-[#cdffd8] font-semibold tracking-wide cursor-pointer transition-all duration-500 hover:opacity-80 to-[#94b9ff] w-full text-center p-3 rounded-full">
+                            ¡Regístrate hoy!</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex items-center max-w-lg w-full mx-auto justify-center md:mt-8 mt-5">
+                <a href="https://wa.link/24ncmg"
+                    class="border-2 openContactFormBtn w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.8rem] font-semibold">
+                    Contacta con nosotras
+                </a>
+            </div>
+
+        </div>
+
+        <div
+            class="max-w-7xl w-full md:mt-20 lg:flex-row flex-col flex items-center justify-between md:gap-10 gap-5 mt-8 mx-auto p-5">
+            <div class="lg:max-w-[35%] w-full">
+                <img src="../Docs/Assets/images/flag.png" class="md:h-80 h-60  w-full" alt="img">
+            </div>
+            <div class="lg:max-w-[65%] w-full">
+                Elegir tu aventura en Costa Rica puede ser tan abrumador como recorrer una densa selva tropical. Con tantas compañías y opciones, es difícil saber por dónde empezar. En Nacion Travel, creemos que tu viaje debe ser tan único como tú. Ya sea que explores majestuosos volcanes, camines por exuberantes selvas tropicales o te relajes en playas vírgenes, estamos aquí para guiarte en cada paso del camino. Considéranos tus expertos personales en Costa Rica, ayudándote a explorar las infinitas opciones para crear el itinerario perfecto para las vacaciones de tus sueños.
+                <br><br>
+                Entendemos tus necesidades de viaje porque hemos explorado Costa Rica tal como tú quieres. Hemos caminado hasta el borde de los cráteres volcánicos del Arenal, navegado en kayak por las serenas aguas del Lago Arenal y nos hemos maravillado con la vida silvestre en las selvas tropicales de Manuel Antonio. Ya sea que busque una aventura llena de adrenalina o una escapada relajada, nos aseguraremos de que su viaje sea inolvidable. Y como vivimos en Costa Rica, un paraíso de maravillas naturales, conocemos los mejores lugares para ver volcanes activos, cascadas escondidas y fauna exótica.
+            </div>
+        </div>
+
+        <div
+            class="max-w-7xl w-full md:mt-20 lg:flex-row flex-col flex justify-between md:gap-10 gap-10 mt-2 mx-auto p-5">
+            <div class="lg:max-w-[30%] text-center border md:mt-20 p-5 w-full  text-lg">
+                <h2 class="tracking-wide font-semibold mb-5 md:text-xl">¿Por qué viajar con nosotros?</h2>
+                <p>Somos sus expertos personales en Costa Rica y le ofrecemos tours personalizados según sus intereses. Con años de experiencia y conocimiento local, le llevaremos a los mejores lugares para ver volcanes, selvas tropicales y playas. Nuestro compromiso con la sostenibilidad garantiza que su aventura apoye a las comunidades locales y preserve la belleza natural de Costa Rica.
+                </p>
+                <p class="mb-5 mt-14">¿Es seguro visitar las selvas tropicales de Costa Rica?</p>
+                <p>Sí, es seguro visitar las selvas tropicales de Costa Rica con un guía experto. Nacion Travel ofrece guías experimentados que garantizan su seguridad mientras explora destinos como Monteverde y Corcovado.
+            </div>
+            <div class="lg:max-w-[70%] w-full">
+                <h2 class="md:text-4xl text-2xl md:mb-8 mb-4 text-center max-w-6xl mx-auto !leading-tight">
+                    Lo más destacado de Costa Rica</h2>
+                    <p class="font-medium text-xl">Explora lo más destacado de Costa Rica</p>
+                    <ul class="space-y-2 pl-5 list-disc text-lg mt-4">
+                    <li>Excursiones a volcanes</b>: Camina hasta cráteres volcánicos, relájate en aguas termales y contempla paisajes impresionantes. </li>
+                    <li><b>Aventuras en la selva tropical</b>: Deslízate en tirolesa entre exuberantes copas de los árboles, observa la exótica fauna y explora cascadas.</li>
+                    <li><b>Escapadas a la playa</b>: Relájate en playas vírgenes, surfea olas de clase mundial y disfruta de impresionantes atardeceres.</li>
+                    <li><b>Inmersión cultural</b>: Visita plantaciones de café, aprende sobre las tradiciones locales y conecta con comunidades amigables.</li>
+                    </ul>
+                    <p class="font-medium text-xl mt-8">Los 10 destinos imperdibles de Costa Rica</p>
+                    <ul class="space-y-2 pl-5 list-disc text-lg mt-4">
+                    <li> <b>Volcán Arenal</b>: Camina hasta la base, relájate en aguas termales y disfruta de impresionantes vistas.</li>
+                    <li> <b>Bosque Nuboso de Monteverde</b>: Camina por puentes colgantes y observa Fauna exótica.</li>
+                    <li> <b>Parque Nacional Manuel Antonio</b>: Explore exuberantes selvas tropicales y relájese en playas de arena blanca. </li>
+                    <li> <b>Parque Nacional Tortuguero</b>: Pasee en kayak por los canales y observe la anidación de tortugas marinas.</li>
+                    <li> <b>Rincón de la Vieja</b>: Descubra cascadas, pozos de lodo volcánico y aguas termales.</li>
+                    <li> <b>Parque Nacional Corcovado</b>: Experimente uno de los lugares con mayor biodiversidad del planeta.</li>
+                    <li> <b>Península de Osa</b>: Visite playas solitarias y avista ballenas y delfines.</li>
+                    <li> <b>Volcán Poás</b>: Maravíllese con el cráter activo y el lago sulfúrico turquesa.</li>
+                    <li> <b>Tamarindo</b>: Surfee olas de clase mundial y disfrute de una vibrante vida nocturna.</li>
+                    <li> <b>La Fortuna</b>: Explore cascadas, tirolesas y la cultura local.</li>
+                    </ul>
+                    <p class="font-medium text-xl mt-8">¿Cuándo es el La mejor época para visitar Costa Rica</p>
+                    <p class="font-medium text-xl mt-5">Costa Rica es un destino ideal para todo el año, pero la mejor época para visitarla depende de tus preferencias:</p>
+                    <ul class="space-y-2 pl-5 list-disc text-lg mt-4">
+                    <li> <b>Temporada seca (diciembre a abril):</b> Ideal para vacaciones en la playa y senderismo.</li>
+                    <li> <b>Temporada verde (mayo a noviembre):</b> Ideal para disfrutar de paisajes exuberantes y menos aglomeraciones.</li>
+                    <li> <b>Avistamiento de fauna:</b> Visita Tortuguero de julio a octubre para la anidación de tortugas o Corcovado para disfrutar de su biodiversidad durante todo el año.</li>
+                    </ul>
+                <div class="flex items-center w-full mx-auto justify-center md:mt-8 mt-5">
+                    <a
+                        class="border-2 openContactFormBtn w-full p-3 md:text-lg rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.8rem] font-semibold">
+                        Contacta con nosotras
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl w-full md:mt-20 mt-8 mx-auto p-5">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
+
+                <div class="w-full text-center pt-8 p-5 border border-zinc-500">
+                    <h2 class="text-3xl tracking-wide magra">Nuestra Flota</h2>
+                    <p class="mt-3 text-lg md:mb-10 mb-5">En Nacion Travel, priorizamos su <b>comodidad</b>, <b>seguridad</b> y <b>conveniencia</b>. Nuestra flota de camionetas privadas y nuestros famosos autobuses negros es perfecta para <b>familias</b>, <b>grupos</b> y tours personalizados. Ya sea que explore los volcanes, las selvas tropicales o las playas de Costa Rica, lo tenemos cubierto:
+                    </p>
+
+                    <div class="swiper mySwiper w-full">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/fleet (1).jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/fleet (2).jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/fleet (3).jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/fleet (4).jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/fleet (5).jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/fleet (6).jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/fleet (7).jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/fleet (8).jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-full text-center pt-8 p-5 border border-zinc-500">
+                    <h2 class="text-3xl tracking-wide magra">Destinos principales</h2>
+                    <p class="mt-3 text-lg md:mb-10 mb-5">Costa Rica es una tierra de <b>belleza incomparable</b>, donde cada rincón ofrece una nueva <b>aventura</b>. Desde los imponentes picos del Volcán Arenal hasta los brumosos senderos del Bosque Nuboso de Monteverde y las prístinas playas de Manuel Antonio, nuestros tours le llevan al corazón de los paisajes más impresionantes del país.</p>
+                    <div class="swiper mySwiper w-full">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/Destinations (1).jpeg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/Destinations (1).jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/Destinations (1).png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/Destinations (2).jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/Destinations (2).png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/Destinations (3).jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/Destinations (4).jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../Docs/Assets/images/Destinations (5).jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="flex items-center max-w-3xl w-full mx-auto justify-center md:mt-12 mt-5">
+                <a
+                    class="border-2 openContactFormBtn w-full p-3 rounded-lg text-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.8rem] font-semibold">
+                    Contacta con nosotras
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-7xl w-full md:mt-20 mt-8 mx-auto p-5">
+            <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
+
+                <div class="border flex items-center flex-col justify-between p-5 text-center pt-8">
+                    <div class="">
+                        <h3 class="text-xl ">¿Por qué Costa Rica es el mejor destino ecoturístico?</h3>
+                        <p class="text-lg mt-7">Costa Rica es líder mundial en ecoturismo, ofreciendo a los viajeros la oportunidad de explorar sus maravillas naturales y, al mismo tiempo, apoyar prácticas sostenibles. Desde sus exuberantes selvas tropicales y playas vírgenes hasta sus volcanes activos y parques nacionales protegidos, Costa Rica es un paraíso para los amantes de la naturaleza. Con más del 25 % de su territorio dedicado a la conservación, el país está comprometido con la preservación de su biodiversidad. Ya sea practicando tirolesa en los bosques nubosos de Monteverde, avistando tortugas marinas en Tortuguero o relajándose en las aguas termales naturales de Arenal.</p>
+                    </div>
+                    <div class="flex items-center max-w-3xl w-full mx-auto justify-center mt-8">
+                        <a
+                            class="openContactFormBtn border-2 w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.5rem] font-semibold">
+                            Contacta con nosotras
+                        </a>
+                    </div>
+                </div>
+                <div class="border flex items-center flex-col justify-between p-5 text-center pt-8">
+                    <div class="">
+                        <h3 class="text-xl ">Las mejores actividades de aventura en Costa Rica que no te puedes perder</h3>
+                        <p class="text-lg mt-7">Costa Rica es el sueño de cualquier aventurero, con emocionantes actividades para todo tipo de viajero. Sube a la cima del Volcán Arenal para disfrutar de impresionantes vistas, o deslízate en tirolesa por el Bosque Nuboso de Monteverde para una descarga de adrenalina sin igual. Navega en kayak por las serenas aguas del Lago Arenal o deslízate por los emocionantes rápidos del Río Pacuare. Para los amantes de la vida silvestre, un tour nocturno en Tortuguero o un safari en el Parque Nacional Corcovado son imprescindibles. Ya sea que busques emociones intensas o una serena belleza natural, Costa Rica lo tiene todo. ¡Deja que Nacion Travel te ayude a planificar tu próxima aventura!</p>
+                    </div>
+                    <div class="flex items-center max-w-3xl w-full mx-auto justify-center mt-8">
+                        <a
+                            class="openContactFormBtn border-2 w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.5rem] font-semibold">
+                            Contacta con nosotras
+                        </a>
+                    </div>
+                </div>
+                <div class="border flex items-center flex-col justify-between p-5 text-center pt-8">
+                    <div class="">
+                        <h3 class="text-xl ">La vida silvestre de Costa Rica:
+                            Un paraíso para los amantes de la naturaleza</h3>
+                            <p class="text-lg mt-7">Costa Rica, hogar del 5% de la biodiversidad mundial, es un paraíso para los amantes de la vida silvestre. Observe lapas rojas y monos aulladores en las copas de los árboles de Manuel Antonio, o observe cómo anidan las tortugas marinas en las playas de Tortuguero. Explore la Península de Osa, donde jaguares, tapires y más de 400 especies de aves prosperan en su hábitat natural. Desde las coloridas ranas de Monteverde hasta las majestuosas ballenas jorobadas de la costa del Pacífico, la vida silvestre de Costa Rica es tan diversa como impresionante. Únase a Nacion Travel para un viaje inolvidable al corazón de la naturaleza.</p>
+                    </div>
+                    <div class="flex items-center max-w-3xl w-full mx-auto justify-center mt-8">
+                        <a
+                            class="openContactFormBtn border-2 w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.5rem] font-semibold">
+                            Contacta con nosotras
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl w-full h-full relative md:mt-24 mt-8 mx-auto p-5">
+            <h2 class="md:text-3xl text-2xl text-center">Los destinos más bellos de Costa Rica</h2>
+            <div class="flex items-center justify-center md:mt-14 mt-8">
+                <div class="slider3Second md:h-[20rem] h-[15rem]">
+                    <input type="radio" name="sliderSecond" id="slider2-item-1" checked>
+                    <input type="radio" name="sliderSecond" id="slider2-item-2">
+                    <input type="radio" name="sliderSecond" id="slider2-item-3">
+                    <input type="radio" name="sliderSecond" id="slider2-item-4">
+                    <input type="radio" name="sliderSecond" id="slider2-item-5">
+                    <input type="radio" name="sliderSecond" id="slider2-item-6">
+                    <input type="radio" name="sliderSecond" id="slider2-item-7">
+                    <input type="radio" name="sliderSecond" id="slider2-item-8">
+                    <input type="radio" name="sliderSecond" id="slider2-item-9">
+
+                    <div class="cardsSecond">
+                        <label class="cardNoSecond" for="slider2-item-1" id="songSecond-1">
+                            <img src="../Docs/Assets/images/BeautifulDestinations (1).jpeg" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-2" id="songSecond-2">
+                            <img src="../Docs/Assets/images/BeautifulDestinations (1).jpg" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-3" id="songSecond-3">
+                            <img src="../Docs/Assets/images/BeautifulDestinations (1).png" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-4" id="songSecond-4">
+                            <img src="../Docs/Assets/images/BeautifulDestinations (2).jpeg" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-5" id="songSecond-5">
+                            <img src="../Docs/Assets/images/BeautifulDestinations (2).jpg" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-6" id="songSecond-6">
+                            <img src="../Docs/Assets/images/BeautifulDestinations (3).jpg" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-7" id="songSecond-7">
+                            <img src="../Docs/Assets/images/BeautifulDestinations (4).jpg" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-8" id="songSecond-8">
+                            <img src="../Docs/Assets/images/BeautifulDestinations (5).jpg" alt="songSecond">
+                        </label>
+                        <label class="cardNoSecond" for="slider2-item-9" id="songSecond-9">
+                            <img src="../Docs/Assets/images/BeautifulDestinations (6).jpg" alt="songSecond">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl w-full h-full relative md:mt-20 mt-3 mx-auto p-5">
+            <h2 class="md:text-3xl text-2xl text-center">Explora las joyas ocultas de Costa Rica con nosotros</h2>
+            <div class="flex items-center md:flex-row flex-col md:mt-12 mt-5 justify-between md:gap-14 gap-5">
+            <div class="md:max-w-[60%] w-full">
+            <p class="text-lg">Más allá de los destinos más conocidos, Costa Rica está llena de joyas ocultas que esperan ser descubiertas. En Nacion Travel, te llevamos a lugares poco conocidos para explorar cascadas secretas, playas remotas y selvas tropicales vírgenes. Visita el menos conocido Parque Nacional Rincón de la Vieja para disfrutar de baños de lodo volcánico y aguas termales, o explora la región de Sarapiquí para practicar kayak de río y observar la vida silvestre. Ya sea que busques soledad o aventura, nuestros guías expertos te mostrarán los tesoros ocultos de Costa Rica. ¡Permítanos ayudarle a descubrir los secretos mejor guardados del país!</p>
+            </div>
+                <div class="md:max-w-[40%] w-full">
+                    <img src="../Docs/Assets/images/Explore Costa Rica’s Hidden Gems with Us (1).png" alt="img"
+                        class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="max-w-7xl w-full h-full relative md:mt-20 mt-3 mx-auto p-5">
+            <h2 class="md:text-3xl text-2xl text-center max-w-xl !leading-tight mx-auto">Viajes sostenibles: Cómo Nacion Travel apoya los ecosistemas de Costa Rica</h2>
+            <div class="flex items-center md:flex-row flex-col-reverse md:mt-12 mt-5 justify-between md:gap-14 gap-5">
+                <div class="md:max-w-[40%] w-full">
+                    <img src="../Docs/Assets/images/Sustainable Travel How Nacion Travel Supports Costa Rica’s Ecosystems (1).png"
+                        alt="img" class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
+                </div>
+                <div class="md:max-w-[60%] w-full">
+                    <p class="text-lg">En Nacion Travel, estamos comprometidos con el turismo sostenible que protege la belleza natural de Costa Rica. Nos asociamos con alojamientos ecológicos, apoyamos proyectos locales de conservación y promovemos prácticas de viaje responsables. Desde la reducción de residuos plásticos hasta el apoyo al turismo comunitario, nos aseguramos de que su aventura tenga un impacto positivo. Únase a nosotros para preservar las selvas tropicales, la vida silvestre y los ecosistemas costeros de Costa Rica para las generaciones futuras. ¡Viaje con Nacion Travel y marque la diferencia!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl w-full h-full relative md:mt-20 mt-3 mx-auto p-5">
+            <h2 class="md:text-3xl text-2xl text-center">Aventuras para toda la familia en Costa Rica</h2>
+            <div class="flex items-center md:flex-row flex-col md:mt-12 mt-5 justify-between md:gap-14 gap-5">
+                <div class="md:max-w-[60%] w-full">
+                    <p class="text-lg">Costa Rica es el destino perfecto para familias, con actividades que encantarán a todos. En Nacion Travel, creamos itinerarios familiares que combinan aventura, educación y relajación. Visite santuarios de perezosos, haga un recorrido en bote por la selva en Tortuguero o disfrute de una aventura en tirolesa en Monteverde. Nuestras camionetas y autobuses privados garantizan un viaje cómodo y seguro para familias de todos los tamaños. ¡Permítanos ayudarle a planificar unas vacaciones en Costa Rica inolvidables para su familia!</p>
+                </div>
+                <div class="md:max-w-[40%] w-full">
+                    <img src="../Docs/Assets/images/Family-Friendly Adventures in Costa Rica (1).jpg" alt="img"
+                        class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl w-full h-full relative md:mt-20 mt-3 mx-auto p-5">
+            <h2 class="md:text-3xl text-2xl text-center max-w-sm !leading-tight mx-auto">Viajes de lujo en Costa Rica: Disfrute de la comodidad y el estilo</h2>
+            <div class="flex items-center md:flex-row flex-col-reverse md:mt-12 mt-5 justify-between md:gap-14 gap-5">
+                <div class="md:max-w-[40%] w-full">
+                    <img src="../Docs/Assets/images/Luxury Travel in Costa Rica Indulge in Comfort and Style (1).jpg"
+                        alt="img" class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
+                </div>
+                <div class="md:max-w-[60%] w-full">
+                    <p class="text-lg">Experimente Costa Rica con lujo con Nacion Travel. Desde tours privados guiados hasta exclusivos eco-lodges, ofrecemos experiencias premium para viajeros exigentes. Relájese en las aguas termales de Arenal, disfrute de un crucero privado al atardecer o descanse en una villa frente al mar en la Península de Osa.
+                        Nuestros paquetes de lujo incluyen servicio personalizado, gastronomía gourmet y aventuras inolvidables. Permítanos crear una experiencia a su medida en Costa Rica que supere sus expectativas.</p>
+                </div>
+            </div>
+            <div class="flex items-center max-w-4xl w-full mx-auto justify-center md:mt-12 mt-5">
+                <a
+                    class="openContactFormBtn border-2 w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.8rem] font-semibold">
+                    Contacta con nosotras
+                </a>
+            </div>
+        </div>
+
+
+        <div class="max-w-7xl w-full h-full relative md:mt-20 mt-3 mx-auto p-5">
+            <h2 class="md:text-3xl text-2xl text-center max-w-xl !leading-tight mx-auto">Descubra Costa Rica: El destino ideal para excursiones inolvidables
+                <p class="text-lg mt-5 text-center">Costa Rica, un pequeño país de Centroamérica, es un paraíso para los viajeros que buscan aventura, relajación y belleza natural. Conocido por su biodiversidad, ecoturismo y estilo de vida Pura Vida, Costa Rica ofrece una amplia gama de excursiones para todo tipo de viajero. Ya sea que desee caminar por exuberantes selvas tropicales, relajarse en playas vírgenes o explorar volcanes activos, Costa Rica tiene algo para todos. En Nacion Travel, nos especializamos en crear excursiones personalizadas que muestran lo mejor de esta maravilla tropical.</p>
+        </div>
+
+        <div class="max-w-7xl w-full h-full relative md:mt-20 mt-3 mx-auto p-5">
+            <div class="flex items-center md:flex-row flex-col-reverse md:mt-12 mt-5 justify-between md:gap-14 gap-5">
+                <div class="md:max-w-[80%] w-full border p-5">
+                    <h2 class="md:text-2xl mb-6 text-xl text-center !leading-tight mx-auto">Por qué elegir Costa Rica para tu próxima aventura?
+                    </h2>
+                        <p class="text-lg mb-1">Biodiversidad sin igual:</p>
+                        
+                        <p class="mb-5 pl-7">Costa Rica alberga el 5% de la biodiversidad mundial, lo que la convierte en uno de los lugares con mayor diversidad biológica del planeta. Desde lapas rojas y monos aulladores hasta tortugas marinas y jaguares, la vida silvestre del país es tan diversa como sus paisajes. Explora parques nacionales como Corcovado, Manuel Antonio y Tortuguero para presenciar de cerca esta increíble biodiversidad.</p>
+                        
+                        <p class="text-lg mb-1">La aventura te espera:</p>
+                        
+                        <p class="mb-5 pl-7">Para los amantes de las emociones fuertes, Costa Rica es un destino de ensueño. Deslízate en tirolesa por el bosque nuboso de Monteverde, navega por los emocionantes rápidos del río Pacuare o camina hasta la cima del volcán Arenal. Con actividades como barranquismo, surf y tours en cuatrimoto, no faltan aventuras llenas de adrenalina.
+                        
+                        <p class="text-lg mb-1">Ecoturismo en su máxima expresión:</p>
+                        
+                        <p class="mb-5 pl-7">Costa Rica es líder mundial en turismo sostenible, con más del 25 % de su territorio protegido como parques nacionales o reservas. Hospédese en alojamientos ecológicos, apoye a las comunidades locales y explore destinos que priorizan la conservación. En Nacion Travel, estamos comprometidos con prácticas ecológicas que protegen la belleza natural de Costa Rica.
+                        
+                        <p class="text-lg mb-1">Playas para todos los gustos:</p>
+                        
+                        <p class="mb-5 pl-7">Con más de 1287 kilómetros de costa, Costa Rica ofrece playas para todo tipo de viajero. Relájese en las blancas arenas de Manuel Antonio, surfee las olas de clase mundial de Tamarindo o explore las recónditas costas de la Península de Osa. Ya sea que busque aventura o relajación, las playas de Costa Rica lo tienen todo.</p>
+                        <p class="text-lg mb-1">Inmersión cultural:</p>
+                        <p class="mb-5 pl-7">La rica cultura de Costa Rica es tan vibrante como sus paisajes. Visite plantaciones de café para aprender sobre la famosa producción cafetalera del país, explore pueblos indígenas para conectar con las tradiciones locales o tome una clase de cocina para saborear la auténtica gastronomía costarricense.</p>
+                        </div>
+                        <div class="md:max-w-[20%] w-full">
+                        <ul class="pl-5 list-disc space-y-2">
+                        <li> <b>Experiencia local</b>: <br>
+                        Nuestro equipo de guías locales conoce Costa Rica al detalle, garantizando una experiencia auténtica e inolvidable.</li>
+                        <li> <b>Itinerarios personalizados</b>: <br>
+                        Creamos tours personalizados a la medida de sus intereses, ya sea que busque aventura, relajación o inmersión cultural.</li>
+                        <li> <b>Prácticas ecológicas</b>: <br>
+                        Estamos comprometidos con el turismo sostenible que protege la belleza natural de Costa Rica y apoya a las comunidades locales.</li>
+                        <li> Comodidad y seguridad:
+                        
+                        Nuestras furgonetas y autobuses privados están equipados con comodidades modernas, lo que garantiza un viaje cómodo y seguro.
+                </div>
+            </div>
+            <div class="flex items-center max-w-4xl w-full mx-auto justify-center md:mt-12 mt-5">
+                <a
+                    class="openContactFormBtn border-2 w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.8rem] font-semibold">
+                    Contacta con nosotras
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-7xl md:pb-24 pb-14 w-full h-full relative md:mt-20 mt-3 mx-auto p-5">
+            <h2 class="md:text-3xl text-2xl text-center !leading-tight mx-auto">Planifica tu aventura en Costa Rica hoy mismo
+            </h2>
+            <p class="text-lg mt-5 text-center">Costa Rica es un destino inigualable, que ofrece la combinación perfecta de aventura, relajación y belleza natural. Ya sea que explores volcanes activos, exuberantes selvas tropicales o playas vírgenes, Nacion Travel te ayudará a crear recuerdos inolvidables. ¡Contáctanos hoy mismo para comenzar a planificar la excursión de tus sueños en Costa Rica!</p>
+            <div class="flex items-center max-w-4xl w-full mx-auto justify-center md:mt-8 mt-5">
+                <a
+                    class="openContactFormBtn border-2 w-full p-3 rounded-lg transition-all duration-300 hover:-translate-y-2 text-center border-zinc-500 tracking-[.8rem] font-semibold">
+                    Contacta con nosotras
+                </a>
+            </div>
+        </div>
+
+        <footer class="md:mt-20 mt-10 pt-20  bg-white">
+            <div class="max-w-7xl w-full mx-auto px-5 ">
+
+                <div class="flex items-center md:justify-between justify-center gap-10 md:flex-row flex-col">
+                    <img src="../Docs/Assets/images/logo.png" class="h-20" alt="logo">
+                    <p class="text-lg max-w-3xl text-center">Desde volcanes y selvas tropicales hasta playas vírgenes, Nacion Travel ofrece aventuras inolvidables en Costa Rica. ¡Contáctanos hoy mismo para empezar a planificar las vacaciones de tus sueños!
+                </div>
+
+                <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:mt-16 mt-8  md:gap-14 gap-5">
+
+                    <div class="border p-5 w-full">
+                        <h2 class="text-2xl mb-4">Reservas y Oficinas</h2>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-zinc-300"></i>
+                            <p class="text-sm">US. 1332 Colt Creek Place, <br>
+                                Wesley Chapel FL 33543</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-3">
+                            <i class="fa-solid fa-location-dot text-zinc-300"></i>
+                            <p class="text-sm">CR. 100 Mts, De Puesto 10, <br>
+                                San Rafael, Alajuela 20108</p>
+                        </div>
+                        <div class="flex items-center gap-3 mt-3">
+                            <i class="fa-solid fa-mobile-screen-button text-zinc-300"></i>
+                            <a href="tel:+50688326969" class="text-sm">+506-8832-6969</a>
+                        </div>
+                        <div class="flex items-center gap-3 mt-3">
+                            <i class="fa-solid fa-envelope text-zinc-300"></i>
+                            <a href="mailto:info@naciontravel.com" class="text-sm">info@naciontravel.com</a>
+                        </div>
+                    </div>
+
+                    <div class="border p-5 w-full flex flex-col justify-center ">
+                        <h2 class="text-2xl mb-4">Horario de oficina</h2>
+                        <p class="text-sm">De lunes a viernes <br>
+                            7:00 am to 6:00 pm</p>
+                        <p class="text-sm mt-3">Sábado <br>
+                            7:00 am to 12:00 noon</p>
+                    </div>
+
+                    <div class="border p-5 w-full flex flex-col justify-center">
+                        <h2 class="text-2xl mb-4">Social</h2>
+
+                        <div class="flex items-center gap-2">
+
+                            <a href="https://www.facebook.com/share/1C5GCk14c2/?mibextid=wwXIfr" target="_blank"
+                                class="w-10 h-10 border rounded-full flex items-center justify-center">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/naciontravel?igsh=MTlxYWRhcjF6cDYwdw==" target="_blank"
+                                class="w-10 h-10 border rounded-full flex items-center justify-center">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href=" https://www.tiktok.com/@nacion_travel?_t=ZS-8vBsGtnANS3&_r=1" target="_blank"
+                                class="w-10 h-10 border rounded-full flex items-center justify-center">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+
+                        </div>
+
+                        <button class="w-full p-3 mt-5 rounded-full cursor-pointer border">¡Etiquétanos en tus fotos!</button>
+
+                    </div>
+
+                </div>
+
+                <p class="text-center p-5 ">Nacion Travel 2025 Todos los derechos reservados </p>
+
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- contact pop-up -->
+
+    <div class="hidden z-50 contactUs fadeIn fixed inset-0 flex items-center justify-center">
+        <div class="w-full h-screen bg-[#000000cc] fixed top-0 left-0 overlayContact hidden fadeIn"></div>
+        <div class="bg-white z-20 relative max-h-[85vh] overflow-auto p-5 rounded-sm border max-w-4xl w-full">
+            <img src="../Docs/Assets/images/logo.png" class="h-12" alt="logo">
+
+            <h3 class="text-center mt-7 text-2xl">Ponte en contacto con nosotras</h3>
+            <form class="mt-10 max-w-3xl mx-auto" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="9a0bbf29-1542-4e33-8a88-0dfd26b94dac">
+                <div class="flex items-center justify-between gap-3">
+                    <label for="name" class=" tracking-wide md:text-xl">Nombre completo</label>
+                    <input required type="text" class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500"
+                        name="name" id="name">
+                </div>
+                <div class="flex mt-6 items-center justify-between gap-3">
+                    <label for="PhoneNumber" class=" tracking-wide md:text-xl">Número de teléfono</label>
+                    <input required type="text" class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500"
+                        name="phone number" id="PhoneNumber">
+                </div>
+                <div class="flex mt-6 items-center justify-between gap-3">
+                    <label for="Email" class=" tracking-wide md:text-xl">Email</label>
+                    <input required type="email" class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500"
+                        name="Email" id="Email">
+                </div>
+                <div class="flex mt-6 md:items-center justify-between gap-3">
+                    <label for="TravelDates" class=" tracking-wide md:text-xl">Fechas de viaje</label>
+                    <div class="w-full md:flex-row flex-col flex md:items-center sm:max-w-xl max-w-[12rem] gap-3">
+                        <label for="startDates" class=" tracking-wide md:text-xl">Llegada</label>
+                        <input required type="date" class="w-full max-w-[10rem] p-3 border border-zinc-500"
+                            name="Arrival" id="startDates">
+                        <label for="Finish" class="ml-2 tracking-wide md:text-xl">Partida</label>
+                        <input required type="date" class="w-full max-w-[10rem] p-3 border border-zinc-500"
+                            name="Departure" id="Finish">
+                    </div>
+                </div>
+                <div class="flex mt-6 items-start justify-between gap-3">
+                    <label for="Message" class=" tracking-wide md:text-xl">Mensaje</label>
+                    <textarea class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500 resize-none" rows="6"
+                        name="Message" id="Message"></textarea>
+                </div>
+                <div class="flex mt-3 items-end justify-end ">
+                    <button type="submit"
+                        class="border cursor-pointer transition-all duration-500 hover:opacity-80 rounded-full px-8 py-2">Enviar</button>
+                </div>
+
+            </form>
+
+            <div class="flex mt-6 items-center justify-center">
+                <a href="https://wa.link/24ncmg" target="_blank"
+                    class="border cursor-pointer transition-all duration-500 hover:opacity-80 rounded-full px-8 py-2">Chatea con nosotros en WhatsApp </a>
+            </div>
+
+            <div class="flex mt-6 items-center justify-center">
+                <div class="flex items-center gap-10">
+                    <a href="https://www.facebook.com/share/1C5GCk14c2/?mibextid=wwXIfr"
+                        class="w-10 h-10 border rounded-full flex items-center justify-center">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/naciontravel?igsh=MTlxYWRhcjF6cDYwdw=="
+                        class="w-10 h-10 border rounded-full flex items-center justify-center">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@nacion_travel?_t=ZS-8vBsGtnANS3&_r=1"
+                        class="w-10 h-10 border rounded-full flex items-center justify-center">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="text-center mt-10 cursor-pointer openPrivacuPolicyBtn">Términos y condiciones</p>
+        </div>
+    </div>
+
+
+    <!-- privacy Policy -->
+
+
+    <div class="hidden z-50 privacyPolicy fixed inset-0 flex items-center justify-center">
+        <div class="w-full h-screen bg-[#000000cc] fixed top-0 left-0 overlayPrivacy hidden"></div>
+        <div class="bg-white z-20 relative max-h-[85vh] overflow-auto p-5 rounded-sm border max-w-4xl w-full">
+            <h3 class="text-center mt-7 text-2xl">Términos y Condiciones de Nacion Travel</h3>
+            <p class="mt-5">¡Bienvenido a Nacion Travel! Estos Términos y Condiciones describen las normas y regulaciones para el uso de nuestros servicios, incluyendo nuestro sitio web, plataforma de reservas y tours. Al acceder o utilizar nuestros servicios, usted acepta cumplir con estos términos. Por favor, léalos detenidamente.
+            </p>
+            <h2 class="mt-5 font-semibold">1. Privacidad y Recopilación de Datos</h2>
+            <p class="mt-2">En Nacion Travel, valoramos su privacidad y nos comprometemos a proteger cualquier información personal que recopilemos. Nuestra Política de Privacidad explica cómo gestionamos sus datos y, al utilizar nuestros servicios, usted consiente la recopilación y el uso de su información como se describe a continuación.
+            
+            1.1 Información personal que recopilamos
+            Recopilamos la información personal necesaria para prestar nuestros servicios, incluyendo:
+            
+            Información de la reserva: Al reservar un tour, recopilamos datos como su nombre, información de contacto, detalles de pago y preferencias de viaje. Esta información se utiliza únicamente para completar su reserva y no se almacena innecesariamente.
+            
+            Información de comunicación: Si nos contacta por correo electrónico, teléfono o nuestro sitio web, recopilaremos sus datos de contacto y el contenido de sus mensajes para ayudarle eficazmente.
+            
+            Información de redes sociales: Si interactúa con nosotros en plataformas como Facebook, Instagram o Twitter, podríamos recopilar la información que comparta públicamente o a través de mensajes directos.
+            
+            
+            </ul>
+            
+            1.2 Cómo usamos su información personal
+            
+            Utilizamos su información personal para los siguientes fines:
+            
+            Para proporcionar, administrar y mejorar nuestros tours y servicios.
+            
+            Para comunicarnos con usted sobre sus reservas, consultas o comentarios.
+            
+            Para prevenir el fraude y el uso indebido de nuestra información. Servicios y garantizar la seguridad de nuestros sistemas.</li>
+            <li> Para cumplir con las obligaciones legales y proteger los derechos y la seguridad de nuestros clientes y personal.
+            </li>
+            <li> Para realizar investigaciones y mejorar nuestros servicios para una mejor experiencia del cliente.</li>
+            </ul>
+            <h2 class="mt-5 font-semibold">1.3 Divulgación de información personal</h2>
+            <p class="mt-2">Podemos compartir su información personal en las siguientes circunstancias:</p>
+            <ul class="pl-5 list-disc space-y-2 mt-2">
+            <li> Proveedores de servicios: Trabajamos con proveedores externos de confianza (por ejemplo, de transporte o alojamiento) que nos ayudan a prestar nuestros servicios. Solo acceden a su información cuando es necesario para realizar sus tareas.</li>
+            <li>Requisitos legales: Podemos divulgar su información para cumplir con obligaciones legales, proteger nuestros derechos, prevenir actividades ilegales o garantizar la seguridad pública.</li>
+            </ul>
+            <h2 class="mt-5 font-semibold">1.4 Sus derechos</h2>
+            <p class="mt-2">Según las leyes de privacidad aplicables, usted tiene los siguientes derechos:</p>
+            <ul class="pl-5 list-disc space-y-2 mt-2">
+            <li>El derecho a saber qué información personal recopilamos y cómo se utiliza.</li>
+            <li>El derecho a solicitar la corrección o eliminación de su información personal.</li>
+            <li>El derecho a no ser discriminado al ejercer sus derechos de privacidad.</li>
+            <li>No vendemos ni compartimos su información personal con fines publicitarios.</li>
+            </ul>
+            <p class="mt-2">Para ejercer sus derechos, por favor, contáctenos utilizando el mismo método que Inicialmente utilizado para comunicarse con nosotros.</p>
+            <h2 class="mt-5 font-semibold">2. Reserva y pago</h2>
+            <h2 class="mt-2 font-semibold">2.1 Confirmación de la reserva</h2>
+            <p class="mt-2">Todas las reservas están sujetas a disponibilidad. La reserva se confirma únicamente tras recibir un correo electrónico de confirmación de Nacion Travel.</p>
+            <h2 class="mt-5 font-semibold">2.2 Condiciones de pago</h2>
+            <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li>Se requiere el pago total al momento de la reserva, a menos que se especifique lo contrario.</li>
+                <li>Aceptamos las principales tarjetas de crédito, transferencias bancarias y otros métodos de pago, como se indica en nuestro sitio web.</li>
+                <li>Los precios están en dólares estadounidenses y están sujetos a cambios sin previo aviso.</li>
+                </ul>
+                <h2 class="mt-5 font-semibold">2.3 Cancelaciones y reembolsos</h2>
+                <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li>Las cancelaciones realizadas con 30 días o más de anticipación a la fecha del tour recibirán un reembolso completo.</li>
+                <li>Las cancelaciones realizadas entre 15 y 29 días antes de la fecha del tour recibirán un reembolso del 50%.</li>
+                <li>Las cancelaciones realizadas con menos de 15 días de anticipación a la fecha del tour no son reembolsables.</li>
+                <li>No presentarse o cancelar antes de la fecha del tour Las salidas de los tours no son reembolsables.</li>
+                </ul>
+                <h2 class="mt-5 font-semibold"> 3. Participación en el Tour</h2>
+                <h2 class="mt-2 font-semibold"> 3.1 Salud y Seguridad</h2>
+                <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li> Los participantes deben informar a Nacion Travel sobre cualquier condición médica, alergia o requisito especial al momento de la reserva.</li>
+                <li> Algunos tours implican actividad física (por ejemplo, senderismo, tirolesa). Los participantes deben asegurarse de estar en buena forma física para el tour elegido.</li>
+                <li> Nacion Travel se reserva el derecho de rechazar la participación de cualquier persona que no se considere apta para un tour. </li>
+                </ul>
+                <h2 class="mt-5 font-semibold"> 3.2 Responsabilidad</h2>
+                <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li> Nacion Travel no se responsabiliza de lesiones, enfermedades ni daños ocurridos durante el tour.
+                ... </li>
+                <li> Los participantes son responsables de sus pertenencias personales y de su seguro de viaje.</li>
+                </ul>
+                <h2 class="mt-5 font-semibold"> 3.3 Cambios en los itinerarios</h2>
+                <ul class="pl-5 list-disc space-y-2 mt-2">
+                <li> Nacion Travel se reserva el derecho de modificar los itinerarios debido a condiciones climáticas, problemas de seguridad u otras circunstancias imprevistas.</li>
+                <li> Si Nacion Travel cancela un tour, los clientes recibirán un reembolso completo o la opción de reprogramarlo.</li>
+                </ul>
+                <h2 class="mt-5 font-semibold"> 4. Propiedad intelectual</h2>
+                <p class="mt-2">Todo el contenido del sitio web de Nacion Travel, incluyendo textos, imágenes, logotipos y videos, es propiedad de Nacion Travel y está protegido por las leyes de derechos de autor. El uso no autorizado de este contenido está estrictamente prohibido.
+                
+                <h2 class="mt-5 font-semibold"> 5. Ley aplicable</h2>
+                
+                <p class="mt-2">Estos Términos y Condiciones se rigen por las leyes de Costa Rica. Cualquier disputa derivada del uso de nuestros servicios se resolverá en los tribunales de Costa Rica.
+                
+                <h2 class="mt-5 font-semibold"> 6. Contáctanos</h2>
+                
+                <p class="mt-2">Si tienes alguna pregunta sobre estos Términos y Condiciones, contáctanos en:
+                
+                <p class="mt-2">
+            <a href="mailto:info@naciontravel.com" class="mt-2 block"><b>Email</b>: info@naciontravel.com</a>
+            <a href="tel:+50677778888" class="mt-2 block"><b>Teléfono</b>: +506 7777 8888</a>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../Docs/javascript/global.js"></script>
+
+<script>
+
+
+
+</script>
+
+</html>

@@ -19,7 +19,7 @@
 
     <div id="bottomToTopScroll"></div>
 
-    <div class="bg-[#f2f6f9]">
+    <div class="bg-[#f2f6f9] overflow-x-hidden">
 
         <div class="homeBg h-full">
             <!-- navbar -->
@@ -28,7 +28,8 @@
 
             <div class="bg-[#f2f6f9] p-3 lg:block hidden">
                 <div class="flex items-center justify-between gap-5 flex-wrap max-w-7xl w-full mx-auto">
-                    <a href="https://wa.link/24ncmg" target="_blank" class="flex font-medium tracking-wide text-sm items-center gap-1">
+                    <a href="https://wa.link/24ncmg" target="_blank"
+                        class="flex font-medium tracking-wide text-sm items-center gap-1">
                         <i class="fa-brands fa-whatsapp"></i>
                         +506-8832-6969
                     </a>
@@ -49,11 +50,25 @@
                         class="flex font-medium tracking-wide text-sm items-center gap-1">
                         TikTok
                     </a>
-                    <select name="" class="border rounded-lg py-1  cursor-pointer" id="">
-                        <option value="">en</option>
-                        <option value="">es</option>
-                        <option value="">fr</option>
-                    </select>
+                    <div class="relative inline-block text-left" id="dropdown-wrapper">
+                        <button id="dropdownButton"
+                            class="inline-flex justify-between items-center w-20 px-4 py-2 border rounded-lg shadow-sm text-gray-700 hover:bg-gray-50">
+                            en
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <div id="dropdownMenu"
+                            class="origin-top-right absolute right-0 mt-2 w-20 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden z-10">
+                            <div class="py-1">
+                                <a href="./fr/index.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">fr</a>
+                                <a href="./es/index.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">es</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -103,11 +118,17 @@
                                     TikTok
                                 </a></li>
                             <li>
-                                <select name="" class="border rounded-lg py-1  cursor-pointer" id="">
-                                    <option value="">en</option>
-                                    <option value="">es</option>
-                                    <option value="">fr</option>
-                                </select>
+                                <ul class="relative inline-block">
+                                    <button id="lang-btn"
+                                        class="border rounded-lg flex items-center gap-1 py-1 px-3 cursor-pointer">
+                                        en <i class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                    <ul id="lang-menu"
+                                        class="absolute hidden bg-white border rounded-lg mt-1 shadow-lg z-10">
+                                        <li><a href="./fr/index.html" class="block px-5 py-1">fr</a></li>
+                                        <li><a href="./es/index.html" class="block px-5 py-1">es</a></li>
+                                    </ul>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -957,8 +978,8 @@
                 Travel Supports Costa Rica’s Ecosystems</h2>
             <div class="flex items-center md:flex-row flex-col-reverse md:mt-12 mt-5 justify-between md:gap-14 gap-5">
                 <div class="md:max-w-[40%] w-full">
-                    <img src="./Docs/Assets/images/Sustainable Travel How Nacion Travel Supports Costa Rica’s Ecosystems (1).png" alt="img"
-                        class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
+                    <img src="./Docs/Assets/images/Sustainable Travel How Nacion Travel Supports Costa Rica’s Ecosystems (1).png"
+                        alt="img" class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
                 </div>
                 <div class="md:max-w-[60%] w-full">
                     <p class="text-lg">At Nacion Travel, we’re committed to sustainable tourism that protects Costa
@@ -999,8 +1020,8 @@
                 Indulge in Comfort and Style</h2>
             <div class="flex items-center md:flex-row flex-col-reverse md:mt-12 mt-5 justify-between md:gap-14 gap-5">
                 <div class="md:max-w-[40%] w-full">
-                    <img src="./Docs/Assets/images/Luxury Travel in Costa Rica Indulge in Comfort and Style (1).jpg" alt="img"
-                        class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
+                    <img src="./Docs/Assets/images/Luxury Travel in Costa Rica Indulge in Comfort and Style (1).jpg"
+                        alt="img" class="md:h-80 h-60 w-full object-cover rounded-3xl border-2">
                 </div>
                 <div class="md:max-w-[60%] w-full">
                     <p class="text-lg">Experience Costa Rica in luxury with Nacion Travel. From private guided tours to
@@ -1205,32 +1226,32 @@
             <img src="./Docs/Assets/images/logo.png" class="h-12" alt="logo">
 
             <h3 class="text-center mt-7 text-2xl">Get in Touch With Us</h3>
-            <form class="mt-10 max-w-3xl mx-auto">
-
+            <form class="mt-10 max-w-3xl mx-auto" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="9a0bbf29-1542-4e33-8a88-0dfd26b94dac">
                 <div class="flex items-center justify-between gap-3">
                     <label for="name" class=" tracking-wide md:text-xl">Full Name</label>
-                    <input type="text" class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500" name="name"
-                        id="name">
+                    <input required type="text" class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500"
+                        name="name" id="name">
                 </div>
                 <div class="flex mt-6 items-center justify-between gap-3">
                     <label for="PhoneNumber" class=" tracking-wide md:text-xl">Phone Number</label>
-                    <input type="text" class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500"
-                        name="PhoneNumber" id="PhoneNumber">
+                    <input required type="text" class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500"
+                        name="phone number" id="PhoneNumber">
                 </div>
                 <div class="flex mt-6 items-center justify-between gap-3">
                     <label for="Email" class=" tracking-wide md:text-xl">Email</label>
-                    <input type="email" class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500" name="Email"
-                        id="Email">
+                    <input required type="email" class="w-full sm:max-w-xl max-w-[12rem] p-3 border border-zinc-500"
+                        name="Email" id="Email">
                 </div>
                 <div class="flex mt-6 md:items-center justify-between gap-3">
                     <label for="TravelDates" class=" tracking-wide md:text-xl">Travel Dates</label>
                     <div class="w-full md:flex-row flex-col flex md:items-center sm:max-w-xl max-w-[12rem] gap-3">
-                        <label for="startDates" class=" tracking-wide md:text-xl">Start Dates</label>
-                        <input type="date" class="w-full max-w-[10rem] p-3 border border-zinc-500" name="start Dates"
-                            id="startDates">
-                        <label for="Finish" class="ml-2 tracking-wide md:text-xl">Finish</label>
-                        <input type="date" class="w-full max-w-[10rem] p-3 border border-zinc-500" name="Finish"
-                            id="Finish">
+                        <label for="startDates" class=" tracking-wide md:text-xl">Arrival</label>
+                        <input required type="date" class="w-full max-w-[10rem] p-3 border border-zinc-500"
+                            name="Arrival" id="startDates">
+                        <label for="Finish" class="ml-2 tracking-wide md:text-xl">Departure</label>
+                        <input required type="date" class="w-full max-w-[10rem] p-3 border border-zinc-500"
+                            name="Departure" id="Finish">
                     </div>
                 </div>
                 <div class="flex mt-6 items-start justify-between gap-3">
@@ -1239,7 +1260,7 @@
                         name="Message" id="Message"></textarea>
                 </div>
                 <div class="flex mt-3 items-end justify-end ">
-                    <button
+                    <button type="submit"
                         class="border cursor-pointer transition-all duration-500 hover:opacity-80 rounded-full px-8 py-2">Send</button>
                 </div>
 
@@ -1253,15 +1274,18 @@
 
             <div class="flex mt-6 items-center justify-center">
                 <div class="flex items-center gap-10">
-                    <div class="w-10 h-10 border rounded-full flex items-center justify-center">
+                    <a href="https://www.facebook.com/share/1C5GCk14c2/?mibextid=wwXIfr"
+                        class="w-10 h-10 border rounded-full flex items-center justify-center">
                         <i class="fa-brands fa-facebook-f"></i>
-                    </div>
-                    <div class="w-10 h-10 border rounded-full flex items-center justify-center">
+                    </a>
+                    <a href="https://www.instagram.com/naciontravel?igsh=MTlxYWRhcjF6cDYwdw=="
+                        class="w-10 h-10 border rounded-full flex items-center justify-center">
                         <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div class="w-10 h-10 border rounded-full flex items-center justify-center">
+                    </a>
+                    <a href="https://www.tiktok.com/@nacion_travel?_t=ZS-8vBsGtnANS3&_r=1"
+                        class="w-10 h-10 border rounded-full flex items-center justify-center">
                         <i class="fa-brands fa-tiktok"></i>
-                    </div>
+                    </a>
                 </div>
             </div>
 

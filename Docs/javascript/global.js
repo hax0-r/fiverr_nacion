@@ -161,3 +161,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+const button = document.getElementById("dropdownButton");
+const menu = document.getElementById("dropdownMenu");
+
+button.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+});
+
+// Optional: Hide dropdown when clicking outside
+window.addEventListener("click", (e) => {
+    if (!document.getElementById("dropdown-wrapper").contains(e.target)) {
+        menu.classList.add("hidden");
+    }
+});
+
+const langBtn = document.getElementById('lang-btn');
+const langMenu = document.getElementById('lang-menu');
+
+langBtn.addEventListener('click', () => {
+  langMenu.classList.toggle('hidden');
+});
+
+// Optional: hide menu if clicked outside
+document.addEventListener('click', (e) => {
+  if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+    langMenu.classList.add('hidden');
+  }
+});
